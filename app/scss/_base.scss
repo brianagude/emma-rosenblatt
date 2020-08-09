@@ -117,6 +117,13 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  background: none;
+  border: none; 
+  box-shadow: none; 
+  cursor: pointer;
+}
+
 ol,
 ul {
   list-style: none;
@@ -141,6 +148,9 @@ table {
 }
 
 * {
+
+  padding: 0;
+  margin: 0;
 
   &,
   &:before,

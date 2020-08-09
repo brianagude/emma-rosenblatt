@@ -25,9 +25,12 @@ function style() {
     .pipe(sass())
     .on("error", sass.logError)
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./', {
+      includeContent: false,
+      sourceRoot: '/app/scss'
+    }))
     .pipe(gulp.dest(files.css))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream({ match: '**/*.css' }));
 }
 
 function scripts() {
@@ -50,8 +53,9 @@ function watch() {
     }
   });
 
-  gulp.watch(files.scss, reload);
-  gulp.watch("app/*.html", reload);
+  gulp.watch(files.scss).on('change', style);
+  // gulp.watch(files.scss, ['sass']);
+  gulp.watch("app/*.html").on('change', reload);
 }
 
 exports.watch = watch
