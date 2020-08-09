@@ -7,7 +7,10 @@ var gulp = require("gulp"),
   cssnano = require("cssnano"),
   sourcemaps = require("gulp-sourcemaps"),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
+  // uglify = require('gulp-uglify'),
+  uglify = require('gulp-uglify-es').default,
+  // TerserPlugin = require('terser-webpack-plugin'),
+  // minify = require("gulp-babel-minify")
   browserSync = require("browser-sync").create();
 
 sass.compiler = require('node-sass');
@@ -49,7 +52,7 @@ function reload() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./app"
+      baseDir: "app"
     }
   });
 

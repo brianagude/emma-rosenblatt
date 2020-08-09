@@ -158,3 +158,8 @@ table {
     box-sizing: border-box;
   }
 }
+
+img, iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
