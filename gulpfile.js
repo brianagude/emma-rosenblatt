@@ -59,7 +59,6 @@ function watch() {
   });
 
   gulp.watch(files.scss).on('change', style);
-  // gulp.watch(files.scss, ['sass']);
   gulp.watch("app/*.html").on('change', reload);
 }
 

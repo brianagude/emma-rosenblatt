@@ -28,8 +28,8 @@ header {
 
 footer {
   // position: sticky;
-  // bottom: 0;
-  // left: 0;
+  bottom: 0;
+  left: 0;
   width: 100%; 
   padding: 16px; 
 
@@ -72,7 +72,8 @@ footer {
 
 .rose-img {
   width: calc(100vw - 16px);
-  max-width: 800px; 
+  max-width: 640px; 
+  // max-width: 800px; 
 
   @include bp(sm){
     width: calc(100vw - 32px);
@@ -80,6 +81,10 @@ footer {
 
   @include bp(md){
     transform: translateX(80px);
+  }
+
+  @include bp(xxl){
+    max-width: 800px; 
   }
 }
 
@@ -121,6 +126,7 @@ footer {
   footer,
   header {
     position: absolute;
+    // bottom
   }
 }
 
