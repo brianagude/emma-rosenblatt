@@ -53,7 +53,9 @@ function watch() {
   browserSync.init({
     server: {
       baseDir: "app"
-    }
+    },
+
+    open: false
   });
 
   gulp.watch(files.scss).on('change', style);
