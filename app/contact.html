@@ -40,8 +40,8 @@
     <section class="about page-section">
       <div class='slides'>
         <img src='./img/contact/emma-3.jpg' class='slide' />
-        <img src='./img/contact/emma-2.jpg' class='slide' />
-        <img src='./img/contact/emma-1.jpg' class='slide' />
+        <!-- <img src='./img/contact/emma-2.jpg' class='slide' />
+        <img src='./img/contact/emma-1.jpg' class='slide' /> -->
       </div>
       <div class="content">
         <h3>Meet Emma</h3>
@@ -61,8 +61,26 @@
       </div>
     </section>
 
+    <div class='features'>
+      <h4>Featured In:</h4>
+      <ul>
+        <li>LA Confidential Magazine</li>
+        <li>Jacky B Skincare</li>
+        
+        <li>Radar Online</li>
+        <li>Hot 8 Yoga</li>
+        
+        <li>Powerplant Superfood Kitchen</li>
+        <li>Angeleno Magazine</li>
+        <li>Lit Yoga Barre</li>
+        <li>Voyage LA</li>
+        
+      </ul>
+    </div>
+
     <section class='contact page-section'>
       <div class='instgram'>
+        <h4>@a.roseinbloom</h4>
         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
         <iframe
           src="//lightwidget.com/widgets/aeb5be432d835c58adb649d5b9910677.html" 
@@ -73,24 +91,27 @@
 
       <div class='contact-form' id="contact-form">
         <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-          <p>
+          <!-- <p> -->
+            <label>Name: * <input type="text" name="name" required /></label>
+          <!-- </p>
+          <p> -->
+            <label>Email: * <input type="email" name="email" required /></label>
+          <!-- </p>
+          <p> -->
+            <label>Subject: <input type="text" name="subject" /></label>
+          <!-- </p> -->
+          <!-- <p>
             <label>Your Role: <select name="role[]" multiple>
                 <option value="leader">Leader</option>
                 <option value="follower">Follower</option>
               </select></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
+          </p> -->
+          <!-- <p> -->
+            <label>Message: * <textarea name="message" required></textarea></label>
+          <!-- </p>
+          <p> -->
             <button type="submit">Send</button>
-          </p>
+          <!-- </p> -->
         </form>
       </div>
     </section>
@@ -98,8 +119,14 @@
   </section>
 
   <footer>
-    <h3>Emma Rosenblatt</h3>
-    <p>Photographer & Yoga&nbsp;Instructor</p>
+    <div class='social-links'>
+      <a href='mailto:emma.rosenblatt@gmail.com' class='footer-icon'>
+        <img src='./img/mail.svg' class='email ' alt='email' />
+      </a>
+      <a href='instagram.com' class='footer-icon'>
+        <img src='./img/instagram.svg' class='instagram' alt='instagram' />
+      </a>
+    </div>
   </footer>
 
 
