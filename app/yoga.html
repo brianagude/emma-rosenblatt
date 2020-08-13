@@ -20,6 +20,8 @@
   <!-- <meta property="og:image" content="./img/logo.svg" /> -->
 
   <!-- styles etc. -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
 </head>
@@ -40,22 +42,28 @@
     <section class="about page-section">
       
       <div class="content">
-        <p>Yoga is a healing modality. Mentally. Physically. Emotionally.
-        Personally, it has helped me immensely in overcoming stress,
-        injury & anxiety. I enrolled in my first teacher-training because
-        deep down I saw how much the practice of yoga healed me. I
-        felt compelled to bring that same healing & peace to everyone
-        else.</p>
+        <div class='description'>
+          <p>Yoga is a healing modality. Mentally. Physically. Emotionally.
+            Personally, it has helped me immensely in overcoming stress,
+            injury & anxiety. I enrolled in my first teacher-training because
+            deep down I saw how much the practice of yoga healed me. I
+            felt compelled to bring that same healing & peace to everyone
+            else.</p>
+        </div>
+        <div class="offerings">
+          <h4>What I offer:</h4>
+          <p><b>1 on 1 Sessions</b> - create the type of class that YOU want. The time and
+            space is all yours!</p>
+          <p><b>Group Sessions (up to 8)</b> - move and breathe with family or friends.</p>
+          <p><b>Events/Workshops</b> - hosting an event? Offer a yoga + meditation session
+            to set the tone.</p>
+          
+          <small><b>Certifications:</b> 200hr ERYT in Power, Sculpt, Yin + meditation with the addition of yoga/barre
+            classes stemming from my ballet background.</small>
+        </div>
+        
 
-        <h4>What I offer:</h4>
-        <p><b>1 on 1 Sessions</b> - create the type of class that YOU want. The time and
-        space is all yours!</p>
-        <p><b>Group Sessions (up to 8)</b> - move and breathe with family or friends.</p>
-        <p><b>Events/Workshops</b> - hosting an event? Offer a yoga + meditation session
-        to set the tone.</p>
-
-        <small><b>Certifications:</b> 200hr ERYT in Power, Sculpt, Yin + meditation with the addition of yoga/barre
-        classes stemming from my ballet background.</small>
+        
 
       </div>
 
@@ -66,21 +74,136 @@
       </div>
     </section>
 
+    <section class="quote-block">
+      <div class='quote-wrapper'>
+        <p class='quote-text'>
+          My private Yoga Session with Emma brought me back to center. It was the
+          workout my body needed with the safety my mind needed. She leads class
+          with such grace and intention, I felt as strong as I did at peace. I have now
+          had Emma come to my home to lead Yoga twice and each time gets better
+          than the last. I would highly recommend Emma for a private session. Safety
+          and Strength.
+        </p>
+        <small class='quote-attribution'>
+          Katie R.
+        </small>
+      </div>
+      <div class='quote-wrapper'>
+        <p class='quote-text'>
+          Emma has been teaching yoga to my family and I privately now for a few
+          years. Not only is she incredibly good at what she does but she creates a
+          safe space for us to practice simply with her energy and words. Emma has
+          been my families go to for events, birthday parties, or even when we just
+          need to chill after a stressful time. More specifically Emma was extremely
+          Covid friendly these last few times we practiced yoga. She respects your
+          space, and still has a hands on approach to teaching but FROM A
+          DISTANCE.
+        </p>
+        <small class='quote-attribution'>
+          Jacklyn B
+        </small>
+      </div>
+      <div class='quote-wrapper'>
+        <p class='quote-text'>
+          Emma has always been a go-to instructor for our lululemon yoga events. She
+          is able to adjust her classes in the moment to fit the needs of whoever comes
+          to class. Her ability to make class inclusive and challenging for all levels
+          makes her a stand-out instructor (and I’ve used a LOT of yoga instructors for
+          store events over the last 3 years.) I frequently have class participants reach
+          out to thank me for the high quality class whenever Emma has taught. Truly
+          the best instructor I’ve had the pleasure to work with!
+        </p>
+        <small class='quote-attribution'>
+          Tori S. <span>(lululemon assistant store manager & community lead)</span>
+        </small>
+      </div>
+      <div class='quote-wrapper'>
+        <p class='quote-text'>
+          Emma led a yoga class with six of my friends for my birthday at my house.
+          We practiced in the open air, with our mats 6-feet apart from each other, and
+          we all felt very safe. It was a nice work from home distraction, break from the
+          news, and overall felt really good to be able to practice yoga again. Her 60
+          minute flow was the perfect combination of challenging and feeling good on
+          the body. Emma was very specific in her moves, helpful with making sure our
+          posture was right, and just made everyone feel safe and calm. At the end of
+          the class we all felt stronger, flexible, and minds were more relaxed.
+        </p>
+        <small class='quote-attribution'>
+          Neeka B.
+        </small>
+      </div>
+      <div class='quote-wrapper'>
+        <p class='quote-text'>
+          I was practicing yoga on and off for the last few years. I strongly believe that
+          yoga is a practice that connects the mind to the body and I struggled to find
+          a teacher that aligned with my values until I took Emma’s class. The way she
+          genuinely and intentionally intertwines the two leaves me beyond fulfilled
+          every time.
+        </p>
+        <small class='quote-attribution'>
+          Natalia A.
+        </small>
+      </div>
+    </section>
+
+    <section class='contact-form'>
+      <form name="yoga" method="POST" data-netlify="true">
+        <!-- <p> -->
+        <label>Name: * <input type="text" name="name" required /></label>
+        <!-- </p>
+                <p> -->
+        <label>Email: * <input type="email" name="email" required /></label>
+        <!-- </p>
+                <p> -->
+        <!-- <label>Subject: <input type="text" name="subject" /></label> -->
+        <!-- </p> -->
+      
+        <label for="classes">Session Type: *
+        
+        <select name="classes" id="classes" required>
+          <option value="1o1">1-on-1</option>
+          <option value="group">Group Sessions (1 to 8)</option>
+          <option value="event">Event or Workshops</option>
+        </select>
+        </label>
+             
+        <!-- <p> -->
+        <label>Message: <textarea name="message" ></textarea></label>
+        <!-- </p>
+                <p> -->
+        <button type="submit">Send</button>
+        <!-- </p> -->
+      </form>
+    </section>
+
   </section>
 
   <footer>
     <div class='social-links'>
       <a href='mailto:emma.rosenblatt@gmail.com' class='footer-icon'>
-        <img src='./img/mail.svg' class='email ' alt='email' />
+        <img src='./img/mail-orange.svg' class='email ' alt='email' />
       </a>
       <a href='instagram.com' class='footer-icon'>
-        <img src='./img/instagram.svg' class='instagram' alt='instagram' />
+        <img src='./img/instagram-orange.svg' class='instagram' alt='instagram' />
       </a>
     </div>
   </footer>
 
 
 
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('.quote-block').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+      });
+  </script>
   <script src='./js/all.js'></script>
 </body>
 

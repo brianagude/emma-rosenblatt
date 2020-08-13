@@ -50,7 +50,10 @@ function watch() {
   browserSync.init({
     open: false,
     server: {
-      baseDir: "app"
+      baseDir: "app",
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
     },
 
     open: false
