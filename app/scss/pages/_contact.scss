@@ -1,3 +1,72 @@
 .contact-page {
-  
+  background-color: $green-light; 
+
+  .slide-in-menu {
+    background-color: $green-light; 
+  }
+
+  .menu-body {
+    li { background-color: $green; }
+  }
+
+  form {
+    @include form($green);
+
+    @include bp(md){
+      padding-top: 0; 
+    }
+  }
+
+  .content, 
+  .features {
+    @include border($green);
+  }
+
+  .about-section {
+    padding: 40px 16px;
+
+    @include bp(md){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 32px; 
+
+      .content { margin-bottom: 0; }
+
+      // .features { grid-column: 1/-1; }
+    }
+  }
+
+  .features {
+    @include bp(md){
+      grid-column: 1/-1;
+
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 24px; 
+        grid-row-gap: 16px; 
+      }
+    }
+  }
+
+  .slides,
+  .content { margin-bottom: 24px; }
+
+  // .instagram-dt {
+  //   display: none; 
+  //   @include bp
+  // }
+
+  .contact-section {
+    .instagram-dt { display: none; }
+
+    @include bp(md){
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-gap: 32px; 
+      .instagram-dt { display: block; }
+      .instagram-mb { display: none; }
+    }
+  }
+
 }

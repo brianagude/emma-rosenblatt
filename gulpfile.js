@@ -33,14 +33,14 @@ function style() {
     .pipe(browserSync.stream({ match: '**/*.css' }));
 }
 
-function scripts() {
-  return gulp
-    .src(files.js)
-    .pipe(concat('all.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js')
-    );
-}
+// function scripts() {
+//   return gulp
+//     .src(files.js)
+//     .pipe(concat('all.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('app/js')
+//     );
+// }
 
 function reload() {
   browserSync.reload();
@@ -65,9 +65,10 @@ function watch() {
 
 exports.watch = watch
 exports.style = style;
-exports.scripts = scripts;
+// exports.scripts = scripts;
 
-var build = gulp.parallel(style, scripts, watch);
+// var build = gulp.parallel(style, scripts, watch);
+var build = gulp.parallel(style, watch);
 
 gulp.task('build', build);
 gulp.task('default', build);

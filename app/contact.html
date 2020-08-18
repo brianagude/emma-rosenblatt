@@ -25,7 +25,142 @@
 </head>
 
 <body class='contact-page'>
+  <div class='slide-in-menu closed'>
+    <div class='menu-header'>
+      <img src='./img/logo.png' class='menu-logo' alt='menu-logo' />
+
+      <button class='menu-close menu-btn'>
+        <img src='./img/menu-open.svg' alt='menu-btn' />
+      </button>
+    </div>
+
+    <div class='menu-body'>
+      <a href="index.html">Home</a>
+      <a href="#">Photography</a>
+      <ul class="dropdown-body">
+        <li><a href="occasions.html">Occasions</a></li>
+        <li><a href="portraits.html">Portraits</a></li>
+        <li><a href="movements.html">Movements</a></li>
+        <li><a href="lifestyle.html">Lifestyle</a></li>
+      </ul>
+      <a href="yoga.html">Yoga</a>
+    </div>
+
+    <div class='menu-footer'>
+      <h3>Emma Rosenblatt</h3>
+      <p>Photographer & Yoga Instructor</p>
+    </div>
+  </div>
+
+  <nav class='top-menu'>
+    <a href="index.html">Home</a>
+    <a href="#">Photography</a>
+    <!-- <ul class="dropdown-body">
+      <li><a href="occasions.html">Occasions</a></li>
+      <li><a href="portraits.html">Portraits</a></li>
+      <li><a href="movements.html">Movements</a></li>
+      <li><a href="lifestyle.html">Lifestyle</a></li>
+    </ul> -->
+    <a href="yoga.html">Yoga</a>
+    <a href="contact.html" class='current'>Contact</a>
+  </nav>
+
   <header>
+    <div class='page-tracker'>
+      <h4>A Rose in Bloom</h4>
+      <p>Contact</p>
+    </div>
+
+    <button class='menu-open menu-btn'>
+      <img src='./img/menu-closed.svg' alt='menu-btn' />
+    </button>
+  </header>
+
+  <section class="about-section page-section">
+    <div class='slides'>
+      <img src='./img/contact/emma-3.jpg' class='slide' />
+    </div>
+    <div class="content">
+      <h3>Meet Emma</h3>
+      <p>I started ‘A Rose in Bloom’ with the hope of creating space
+        for one to bloom and discover their full potential. To me,
+        photography and yoga flow seamlessly together. Both create
+        an internal & external balance of confidence and innate joy.
+        <br><br>
+        Whether it be in asana (yoga pose), discovering newfound
+        space and movement in the body or through a photo
+        capturing ones true essence — my intention is to create a
+        comfortable environment to help you meet your needs and
+        achieve that ‘aha’ moment.</p>
+
+      <a href="#contact-form">Let’s get in touch!</a>
+      <p>xx, Emma</p>
+    </div>
+
+    <div class='features'>
+      <h4>Featured In:</h4>
+      <ul>
+        <li>LA Confidential Magazine</li>
+        <li>Jacky B Skincare</li>
+
+        <li>Radar Online</li>
+        <li>Hot 8 Yoga</li>
+
+        <li>Powerplant Superfood Kitchen</li>
+        <li>Angeleno Magazine</li>
+        <li>Lit Yoga Barre</li>
+        <li>Voyage LA</li>
+
+      </ul>
+    </div>
+  </section>
+
+
+
+  <section class='contact-section page-section'>
+    <div class='instagram-dt'>
+      <h4>@a.roseinbloom</h4>
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe src="//lightwidget.com/widgets/aeb5be432d835c58adb649d5b9910677.html" scrolling="no"
+        allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;">
+      </iframe>
+    </div>
+
+    <div class='instagram-mb'>
+      <h4>@a.roseinbloom</h4>
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+        src="//lightwidget.com/widgets/49befbd990f35553b85a37168880509f.html" scrolling="no" allowtransparency="true"
+        class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+    </div>
+
+
+
+    <div class='contact-form' id="contact-form">
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Name: * <input type="text" name="name" required /></label>
+        </p>
+        <p>
+          <label>Email: * <input type="email" name="email" required /></label>
+        </p>
+        <p>
+          <label>Subject: <input type="text" name="subject" /></label>
+        </p>
+        <p>
+          <label>Message: * <textarea name="message" required></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </div>
+  </section>
+
+
+
+
+  <!-- <header>
     <nav class='menu-desktop'>
       <a href='index'>Home</a>
       <ul class='dropdown closed'>
@@ -38,15 +173,6 @@
       <a href='yoga'>Yoga</a>
       <a href='contact' class='selected'>Contact</a>
     </nav>
-
-    <!-- <nav>
-      <ul class="drop-down closed">
-        <li><a href="#" class="nav-button">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Library</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav> -->
 
     <div class='heading'>
       <h4>A Rose in Bloom</h4>
@@ -62,8 +188,6 @@
     <section class="about page-section">
       <div class='slides'>
         <img src='./img/contact/emma-3.jpg' class='slide' />
-        <!-- <img src='./img/contact/emma-2.jpg' class='slide' />
-        <img src='./img/contact/emma-1.jpg' class='slide' /> -->
       </div>
       <div class="content">
         <h3>Meet Emma</h3>
@@ -113,33 +237,47 @@
 
       <div class='contact-form' id="contact-form">
         <form name="contact" method="POST" data-netlify="true">
-          <!-- <p> -->
+           <p> 
             <label>Name: * <input type="text" name="name" required /></label>
-          <!-- </p>
+          </p>
           <p> -->
-            <label>Email: * <input type="email" name="email" required /></label>
-          <!-- </p>
+  <!-- <label>Email: * <input type="email" name="email" required /></label> -->
+  <!-- </p>
           <p> -->
-            <label>Subject: <input type="text" name="subject" /></label>
-          <!-- </p> -->
-          <!-- <p>
+  <!-- <label>Subject: <input type="text" name="subject" /></label> -->
+  <!-- </p> -->
+  <!-- <p>
             <label>Your Role: <select name="role[]" multiple>
                 <option value="leader">Leader</option>
                 <option value="follower">Follower</option>
               </select></label>
           </p> -->
-          <!-- <p> -->
-            <label>Message: * <textarea name="message" required></textarea></label>
-          <!-- </p>
+  <!-- <p> -->
+  <!-- <label>Message: * <textarea name="message" required></textarea></label> -->
+  <!-- </p>
           <p> -->
-            <button type="submit">Send</button>
-          <!-- </p> -->
-        </form>
+  <!-- <button type="submit">Send</button> -->
+  <!-- </p> -->
+  <!-- </form>
       </div>
     </section>
     
-  </section>
+  </section> -->
 
+  <!-- <footer>
+    <div class='social-links'>
+      <a href='mailto:emma.rosenblatt@gmail.com' class='footer-icon'>
+        <img src='./img/mail.svg' class='email ' alt='email' />
+      </a>
+      <a href='instagram.com' class='footer-icon'>
+        <img src='./img/instagram.svg' class='instagram' alt='instagram' />
+      </a>
+    </div>
+  </footer> -->
+
+
+
+  <!-- <script src='./js/all.js'></script> -->
   <footer>
     <div class='social-links'>
       <a href='mailto:emma.rosenblatt@gmail.com' class='footer-icon'>
@@ -151,9 +289,8 @@
     </div>
   </footer>
 
-
-
-  <script src='./js/all.js'></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='./js/global.js'></script>
 </body>
 
 </html>

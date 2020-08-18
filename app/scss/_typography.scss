@@ -43,18 +43,23 @@ h6 {
 }
 
 p,
-a,
 li {
   font-family: $font-primary;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.33;
 
-  b { font-weight: 400; }
+  b { font-weight: 300; }
 }
 
 small {
   font-weight: 300;
   font-size: 12px;
+}
+
+a {
+  font-size: 24px;
+  line-height: 1.33;
+  font-weight: 300;
 }
 
