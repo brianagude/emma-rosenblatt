@@ -17,15 +17,24 @@
     }
   }
 
-  .content, 
+  .content .container, 
   .features {
     @include border($green);
   }
 
   .about-section {
-    padding: 40px 16px;
+
+    a {
+      font-size: 20px; 
+      font-weight: 400;
+      // margin: 16px 0;
+      margin-top: 16px; 
+    }
+
+    p { margin-top: 16px; }
 
     @include bp(md){
+      // padding: 40px 80px; 
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 32px; 
@@ -37,14 +46,19 @@
   }
 
   .features {
+    h4 {
+      text-align: center; 
+    }
+
     @include bp(md){
       grid-column: 1/-1;
 
       ul {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 24px; 
-        grid-row-gap: 16px; 
+        grid-row-gap: 8px; 
+        margin-top: 16px;
       }
     }
   }
@@ -68,5 +82,4 @@
       .instagram-mb { display: none; }
     }
   }
-
 }

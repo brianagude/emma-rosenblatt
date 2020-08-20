@@ -9,7 +9,7 @@
   padding: 16px; 
   border: solid 5px $color; 
   border-radius: 4px;
-  background-color: lighten($color, 30%);
+  background-color: transparentize($color, 0.5);
 }
 
 @mixin form($color) {
@@ -32,7 +32,7 @@
 
     &:hover,
     &:focus {
-      background-color: lighten($color, 30%);
+      background-color: transparentize($color, 0.5);
     }
   }
 
@@ -56,8 +56,7 @@
   }
 }
 
-// $padding: 16px;
-// $margin: 40px; 
+
 
 .homepage, 
 .photography-page,
@@ -66,18 +65,15 @@
   min-height: 100vh; 
 }
 
+body { scroll-behavior: smooth;}
+
 // header ---------------------------------------------------------------------------
 header {
   width: 100%;
   padding: 16px;
 
-  
-
   .header-logo { width: 240px; }
-
-  .page-tracker {
-    width: auto;
-  }
+  .page-tracker { width: auto; }
 
   h4 {
     text-transform: uppercase;
@@ -91,10 +87,6 @@ header {
     margin-top: 0.25rem;
   }
 
-  // @include bp(sm){
-  //   padding: 32px; 
-  // }
-
   @include bp(md){
     display: flex;
     align-items: center;
@@ -106,14 +98,6 @@ header {
   }
 }
 
-// .menu-btn {
-//   position: fixed;
-//   top: 16px;
-//   right: 16px;
-
-//   @include bp(sm){ display: none; }
-// }
-
 .slide-in-menu {
   border-left: 1px solid $black;
   border-right: 1px solid $black;
@@ -123,20 +107,15 @@ header {
   max-width: 420px; 
   width: 100%; 
   height: 100%;
-
   z-index: 10;
 
   display: flex;
   flex-direction: column; 
-
   transition: transform 0.75s;
 
   &.closed {
     transform: translateX(100%);
   }
-
-
-  // .menu-btn { position: relative; }
 }
 
 .top-menu {
@@ -183,7 +162,6 @@ header {
 
   &-header {
     padding: 16px 16px 20px; 
-    // border-bottom: 1px solid $black;
   }
   
   &-body {
@@ -211,11 +189,7 @@ header {
   padding: 40px 16px; 
 
   @include bp(sm){
-    padding: 64px 64px;
-  }
-
-  @include bp(md){
-    padding: 80px 64px; 
+    padding: 40px 64px;
   }
 }
 
@@ -250,6 +224,5 @@ footer {
 
   @include bp(sm){
     text-align: left; 
-    // padding: 16px 32px; 
   }
 }
