@@ -1,6 +1,12 @@
 .contact-page {
   background-color: $green-light; 
 
+  .dropdown-body .open {
+    @include bp(md){
+      background-color: transparentize($green-light, 50%);
+    }
+  }
+
   .slide-in-menu {
     background-color: $green-light; 
   }

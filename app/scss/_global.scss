@@ -160,6 +160,8 @@ header {
 }
 
 .dropdown-menu.open {
+  
+
   .dropdown-btn { font-weight: 400; }
   @include bp(md){
     .dropdown-btn { margin-bottom: 8px; }

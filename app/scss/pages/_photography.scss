@@ -31,13 +31,9 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 24px;
         grid-row-gap: 36px;
-        grid-auto-flow: row dense;
-        // align-items: center;
-        // justify-content: center;
       }
-
-      .vert { grid-row: 1/span 2; }
-
+      
+      .vert { grid-row: auto /span 2; }
       img + img { margin-top: 0; }
     }
 
