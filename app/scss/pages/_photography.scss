@@ -1,3 +1,39 @@
 .photography-page {
   background-color: $gray-light;
+   .slide-in-menu {
+    background-color: $gray-light; 
+  }
+
+  .menu-body {
+    li { background-color: $gray; }
+  }
+
+  .photography-section {
+    // .container {
+    //   @include bp(sm){
+    //     display: grid;
+    //     grid-template-columns; 1fr
+    //   }
+    // }
+    img {
+      transition: box-shadow 0.5s;
+      &:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    }
+
+    img + img {
+      margin-top: 24px;
+    }
+
+    @include bp(sm){
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 36px;
+        align-items: center;
+      }
+
+      img + img { margin-top: 0; }
+    }
+  }
 }

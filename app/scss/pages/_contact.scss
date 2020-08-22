@@ -22,7 +22,7 @@
     @include border($green);
   }
 
-  .about-section {
+  .about-section .container {
 
     a {
       font-size: 20px; 
@@ -37,6 +37,7 @@
       // padding: 40px 80px; 
       display: grid;
       grid-template-columns: 1fr 1fr;
+      align-items: center;
       grid-gap: 32px; 
 
       .content { margin-bottom: 0; }
@@ -73,3 +74,5 @@
 
   
 }
+
+

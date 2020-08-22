@@ -17,6 +17,10 @@
     }
   }
 
+  .slides {
+    margin-top: 80px;
+  }
+
   .content .container, 
   .review {
     @include border($orange);
@@ -26,7 +30,7 @@
     margin: 0 24px; 
   }
 
-  .about-section {
+  .about-section .container {
 
     a {
       font-size: 20px; 
@@ -37,11 +41,21 @@
 
     p { margin-top: 16px; }
 
+    h5 {
+      // font-style: italic;
+      line-height: 1.33;
+    }
+
+    .offerings {
+      margin-top: 20px;
+    }
+
     @include bp(md){
       // padding: 40px 80px; 
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 32px; 
+      align-items: center;
 
       .content { margin-bottom: 0; }
 
