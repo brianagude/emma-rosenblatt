@@ -7,7 +7,7 @@ var gulp = require("gulp"),
   cssnano = require("cssnano"),
   sourcemaps = require("gulp-sourcemaps"),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
+  uglify = require('gulp-uglify-es').default,
   browserSync = require("browser-sync").create();
 
 sass.compiler = require('node-sass');
@@ -25,19 +25,22 @@ function style() {
     .pipe(sass())
     .on("error", sass.logError)
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./', {
+      includeContent: false,
+      sourceRoot: '/app/scss'
+    }))
     .pipe(gulp.dest(files.css))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream({ match: '**/*.css' }));
 }
 
-function scripts() {
-  return gulp
-    .src(files.js)
-    .pipe(concat('all.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js')
-    );
-}
+// function scripts() {
+//   return gulp
+//     .src(files.js)
+//     .pipe(concat('all.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('app/js')
+//     );
+// }
 
 function reload() {
   browserSync.reload();
@@ -45,20 +48,27 @@ function reload() {
 
 function watch() {
   browserSync.init({
+    open: false,
     server: {
-      baseDir: "./app"
-    }
+      baseDir: "app",
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
+    },
+
+    open: false
   });
 
-  gulp.watch(files.scss, reload);
-  gulp.watch("app/*.html", reload);
+  gulp.watch(files.scss).on('change', style);
+  gulp.watch("app/*.html").on('change', reload);
 }
 
 exports.watch = watch
 exports.style = style;
-exports.scripts = scripts;
+// exports.scripts = scripts;
 
-var build = gulp.parallel(style, scripts, watch);
+// var build = gulp.parallel(style, scripts, watch);
+var build = gulp.parallel(style, watch);
 
 gulp.task('build', build);
 gulp.task('default', build);

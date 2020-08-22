@@ -1,31 +1,84 @@
 <!DOCTYPE html>
-  <head>
-    <title>Gulp Template</title>
 
-    <!-- default meta tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Base boilerplate for creating static websites using gulp">
-    <meta name="keywords" content="gulp, boilerplate">
-    <meta name="author" content="briana gude">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>A Rose in Bloom</title>
 
-    <!-- twitter meta tags -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@brianagude" />
-    <meta name="twitter:creator" content="@brianagude" />
-    <meta property="og:url" content="https://brianagude.com/" />
-    <meta property="og:title" content="Gulp Template" />
-    <meta property="og:description" content="Base boilerplate for creating static websites using gulp" />
-    <meta property="og:image" content="./img/logo.svg" />
+  <!-- default meta tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor">
+  <meta name="keywords" content="photographer, yoga, los angeles, la, portraits, lifestyle, occasions">
+  <meta name="author" content="briana gude">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- styles etc. -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
-  </head>
+  <!-- twitter meta tags -->
+  <meta name="twitter:card" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor" />
+  <!-- <meta name="twitter:site" content="@brianagude" />
+        <meta name="twitter:creator" content="@brianagude" /> -->
+  <!-- <meta property="og:url" content="https://emmarosenblatt.com.com/" /> -->
+  <meta property="og:title" content="A Rose in Bloom" />
+  <meta property="og:description" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor" />
+  <meta property="og:image" content="./img/rose.png" />
 
-  <body>
-   <h2>hello briana</h2>
+  <!-- styles etc. -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png"> -->
+</head>
 
-    <script src='./js/all.js'></script>
-  </body>
+<body class='homepage'>
+  <div class='slide-in-menu closed'>
+    <div class='menu-header'>
+      <img src='./img/logo.png' class='menu-logo' alt='menu-logo' />
+      <button class='menu-close menu-btn'>
+        <img src='./img/menu-open.svg' alt='menu-btn' />
+      </button>
+    </div>
+
+    <div class='menu-body'>
+      <a href="#">Photography</a>
+      <ul class="dropdown-body">
+        <li><a href="occasions.html">Occasions</a></li>
+        <li><a href="portraits.html">Portraits</a></li>
+        <li><a href="movements.html">Movements</a></li>
+        <li><a href="lifestyle.html">Lifestyle</a></li>
+      </ul>
+      <a href="yoga.html">Yoga</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class='menu-footer'>
+      <h3>Emma Rosenblatt</h3>
+      <p>Photographer & Yoga Instructor</p>
+    </div>
+  </div>
+
+  <header>
+    <img src='./img/logo.png' class='header-logo' alt='header-logo' />
+
+    <button class='menu-open menu-btn'>
+      <img src='./img/menu-closed.svg' alt='menu-btn' />
+    </button>
+  </header>
+
+  <section class="rose-menu-wrapper">
+    <div class='menu'>
+      <img src='./img/rose.png' class='rose-img' alt='rose' />
+
+      <a href="portraits.html" class='link-portraits'>Portraits</a>
+      <a href="movements.html" class='link-movement'>Movement</a>
+      <a href="occasions.html" class='link-occasions'>Occasions</a>
+      <a href="lifestyle.html" class='link-lifestyle'>Lifestyle</a>
+      <a href="yoga.html" class='link-yoga'>Yoga</a>
+      <a href="contact.html" class='link-contact'>Contact</a>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Emma Rosenblatt</h3>
+    <p>Photographer & Yoga&nbsp;Instructor</p>
+  </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='./js/global.js'></script>
+</body>
+
 </html>

@@ -1,0 +1,31 @@
+.homepage {
+  background-color: $yellow-light; 
+
+  .slide-in-menu {
+    background-color: $yellow-light; 
+  }
+
+  .menu-body {
+    li { background-color: $yellow; }
+  }
+
+  .rose-menu-wrapper {
+    padding: 16px;
+    min-height: calc(100vh - 152px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a { display: none; }
+
+    .menu {
+      max-width: 620px; 
+    }
+
+    @include bp(sm){
+      a { display: inline-block; }
+      min-height: calc(100vh - 168); //why is this being overwritten
+    }
+  }
+  
+}
