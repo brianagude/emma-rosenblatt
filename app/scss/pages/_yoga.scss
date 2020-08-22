@@ -127,6 +127,44 @@
       line-height: 1.33;
     }
 
+    .offerings,
+    .description {
+      
+
+      h6 {
+        font-weight: 400;
+        margin-top: 24px;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 8px; 
+      }
+
+      a {
+        margin-top: 36px; 
+        display: inline-block;
+
+        &:hover { text-decoration: underline; }
+      }
+
+      // a:hover { 
+        
+        
+      // }
+
+      // a {
+      //   text-decoration: underline;
+      // }
+
+      // .btn {
+      //   display: inline-block;
+      //   @include border($orange);
+      //   padding: 4px; 
+      // }
+    }
+
     .offerings {
       margin-top: 20px;
     }
@@ -136,7 +174,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 32px; 
-      align-items: center;
+      // align-items: center;
 
       .content { margin-bottom: 0; }
 
