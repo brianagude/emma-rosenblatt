@@ -71,15 +71,5 @@
   //   @include bp
   // }
 
-  .contact-section {
-    .instagram-dt { display: none; }
-
-    @include bp(md){
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      grid-gap: 32px; 
-      .instagram-dt { display: block; }
-      .instagram-mb { display: none; }
-    }
-  }
+  
 }
