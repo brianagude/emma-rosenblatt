@@ -17,7 +17,10 @@
     // }
     img {
       transition: box-shadow 0.5s;
+<<<<<<< HEAD
       max-height: 90vh;
+=======
+>>>>>>> d1b2631bc1f1e0d4120264b9319398787b4d12dd
       &:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
     }
 
@@ -32,16 +35,22 @@
         grid-column-gap: 24px;
         grid-row-gap: 36px;
         align-items: center;
+<<<<<<< HEAD
         justify-content: center;
+=======
+>>>>>>> d1b2631bc1f1e0d4120264b9319398787b4d12dd
       }
 
       img + img { margin-top: 0; }
     }
+<<<<<<< HEAD
 
     @include bp(md){
       .container {
         grid-template-columns: repeat(3, 1fr);
       }
     }
+=======
+>>>>>>> d1b2631bc1f1e0d4120264b9319398787b4d12dd
   }
 }
