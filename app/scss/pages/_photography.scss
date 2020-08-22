@@ -31,9 +31,12 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 24px;
         grid-row-gap: 36px;
-        align-items: center;
-        justify-content: center;
+        grid-auto-flow: row dense;
+        // align-items: center;
+        // justify-content: center;
       }
+
+      .vert { grid-row: 1/span 2; }
 
       img + img { margin-top: 0; }
     }
