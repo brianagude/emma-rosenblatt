@@ -29,25 +29,27 @@
   <div class='slide-in-menu closed'>
     <div class='menu-header'>
       <img src='./img/logo.png' class='menu-logo' alt='menu-logo' />
-  
+
       <button class='menu-close menu-btn'>
         <img src='./img/menu-open.svg' alt='menu-btn' />
       </button>
     </div>
-  
+
     <div class='menu-body'>
-      <a href="index.html">Home</a>
-      <a href="photography.html">Photography</a>
-      <ul class="dropdown-body">
-        <li><a href="photography.html">Occasions</a></li>
-        <li><a href="photography.html">Portraits</a></li>
-        <li><a href="photography.html">Movements</a></li>
-        <li><a href="photography.html">Lifestyle</a></li>
-      </ul>
-      <a href="yoga.html">Yoga</a>
-      <a href="contact.html">Contact</a>
+      <a href="index">Home</a>
+      <div class='dropdown-menu'>
+        <a href="#" class='dropdown-btn'>Photography</a>
+        <ul class="dropdown-body">
+          <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
+          <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
+          <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
+          <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
+        </ul>
+      </div>
+      <a href="yoga">Yoga</a>
+      <a href="contact">Contact</a>
     </div>
-  
+
     <div class='menu-footer'>
       <h3>Emma Rosenblatt</h3>
       <p>Photographer & Yoga Instructor</p>
@@ -55,16 +57,18 @@
   </div>
 
   <nav class='top-menu'>
-    <a href="index.html">Home</a>
-    <a href="photography.html">Photography</a>
-    <!-- <ul class="dropdown-body">
-          <li><a href="photography.html">Occasions</a></li>
-          <li><a href="photography.html">Portraits</a></li>
-          <li><a href="photography.html">Movements</a></li>
-          <li><a href="photography.html">Lifestyle</a></li>
-        </ul> -->
-    <a href="yoga.html" class='current'>Yoga</a>
-    <a href="contact.html">Contact</a>
+    <a href="index">Home</a>
+    <div class='dropdown-menu'>
+      <a href="#" class='dropdown-btn'>Photography</a>
+      <ul class="dropdown-body">
+        <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
+        <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
+        <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
+        <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
+      </ul>
+    </div>
+    <a href="yoga" class='current'>Yoga</a>
+    <a href="contact">Contact</a>
   </nav>
 
   <header>
@@ -196,18 +200,18 @@
       <div class='instagram-dt'>
         <h4>@emma_rosenblatt</h4>
         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-          src="//lightwidget.com/widgets/d35c53fcbacb50f982f606e9c561b534.html" scrolling="no" allowtransparency="true"
-          class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-      </div>
-      
-      <div class='instagram-mb'>
-        <h4>@emma_rosenblatt</h4>
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-          src="//lightwidget.com/widgets/37c77cb851b356e0abd0e71dbc0cb8ac.html" scrolling="no" allowtransparency="true"
+          src="//lightwidget.com/widgets/d35c53fcbacb50f982f606e9c561b534" scrolling="no" allowtransparency="true"
           class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
       </div>
 
-      <form name="yoga" method="POST" data-netlify="true"  id='contact-form'>
+      <div class='instagram-mb'>
+        <h4>@emma_rosenblatt</h4>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+          src="//lightwidget.com/widgets/37c77cb851b356e0abd0e71dbc0cb8ac" scrolling="no" allowtransparency="true"
+          class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      </div>
+
+      <form name="yoga" method="POST" data-netlify="true" id='contact-form'>
         <label>Name: * <input type="text" name="name" required /></label>
         <label>Email: * <input type="email" name="email" required /></label>
 

@@ -4,12 +4,12 @@
   ------------------------------------------------------------------------------------------------------
 */
 
-// mixins
+// mixins -----------------------------------------
 @mixin border($color) {
   padding: 16px; 
   border: solid 5px $color; 
   border-radius: 4px;
-  background-color: transparentize($color, 0.5);
+  background-color: transparentize($color, 0.6);
 }
 
 @mixin form($color) {
@@ -32,7 +32,7 @@
 
     &:hover,
     &:focus {
-      background-color: transparentize($color, 0.5);
+      background-color: transparentize($color, 0.6);
     }
   }
 
@@ -99,9 +99,8 @@ header {
 }
 
 .slide-in-menu {
-  border-left: 1px solid $black;
-  border-right: 1px solid $black;
-  position: absolute;
+  border: 1px solid $black;
+  position: fixed;
   top: 0;
   right: 0;
   max-width: 420px; 
@@ -116,6 +115,8 @@ header {
   &.closed {
     transform: translateX(100%);
   }
+
+  @include bp(md){ display: none; }
 }
 
 .top-menu {
@@ -130,22 +131,97 @@ header {
   a { 
     display: inline-block; 
     font-size: 20px; 
+    height: max-content;
 
     &:hover { font-weight: 400; }
+    &.current { 
+      border-bottom: 2px solid $black; 
+      padding-bottom: 2px;
+      font-weight: 400; 
+      display: inline-block;
+    }
   }
 
-  a + a { margin-left: 32px; }
+  & > * { margin-left: 24px; }
 
-  .current { 
-    border-bottom: 2px solid $black; 
-    padding-bottom: 2px;
-    font-weight: 400; 
-  }
+  
 
   @include bp(md){
-    display: block; 
+    display: flex; 
   }
 }
+
+.dropdown-body {
+  display: none;
+
+  @include bp(md){
+    li + li { margin-top: 4px; }
+  }
+}
+
+.dropdown-menu.open {
+  .dropdown-btn { font-weight: 400; }
+  @include bp(md){
+    .dropdown-btn { margin-bottom: 8px; }
+  }
+}
+
+.dropdown {
+  &-body {
+    // background-color: 
+    // opacity: 0;
+    // transition: opacity 1s;
+    // transform: translateY(200%);
+    display: none;
+
+    // a { font-size: 16px; }
+
+    // li + li { margin-top: 4px; }
+  }
+
+  &-menu {
+
+    &.open {
+      .dropdown-btn {
+        font-weight: 400;
+        // margin-bottom: 8px;
+      }
+
+      // .dropdown-body {
+      //   opacity: 1;
+      //   transform: translateY(0);
+      // }
+    }
+
+  }
+
+
+}
+
+// .dropdown-menu {
+//   &-open {
+
+//   }
+// }
+
+// .dropdown {
+//   &-body {
+
+//   }
+// }
+
+// .dropdown-body {
+//   min-width: 100%;
+//   // background: #f2f2f2;
+//   // display: none;
+//   position: absolute;
+//   z-index: 999;
+//   left: 0;
+// }
+
+// .dropdown-body li{
+//   display: block;
+// }
 
 .menu {
   &-btn {
@@ -244,6 +320,11 @@ header {
   //   max-width: 420px;
   // }
 }
+
+
+
+
+
 
 // footer ------------------------------------------------------------------------------------
 

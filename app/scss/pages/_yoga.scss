@@ -19,6 +19,10 @@
 
   .slides {
     margin-top: 80px;
+
+    @include bp(md){
+      margin-top: 0; 
+    }
   }
 
   .content .container, 
@@ -28,7 +32,82 @@
 
   .review {
     margin: 0 24px; 
+
+    &-text {
+      font-size: 16px; 
+    }
+
+    &-attribution {
+      font-size: 12px; 
+      font-weight: 400;
+      margin-top: 16px; 
+      display: inline-block;
+      // margin-left: auto;
+      // text-align: right;
+    }
   }
+
+  .slick-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px; 
+
+
+    button {
+      position: relative; 
+      color: transparent;
+      margin: 0 8px;
+
+      &:before {
+        content: '';
+        background-color: transparent;
+        border: $orange 2px solid;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      &:hover {
+        &:before {
+          background-color: $orange;
+        }
+      }
+    }
+
+    .slick-active button:before {
+      background-color: $orange;
+    }
+  }
+
+  // .slick-dots button { 
+  //   position: relative; 
+  //   color: transparent;
+  //   margin: 0 8px;
+  //   // display: none; 
+
+  //   &:hover {
+  //     &:before {
+  //       background-color: $orange;
+  //     }
+  //   }
+  // }
+
+  // .slick-dots .slick-active button:before {
+  //   background-color: $orange;
+  // }
+
+  // .slick-dots button:before {
+  //   content: '';
+  //   background-color: transparent;
+  //   border: $orange 2px solid;
+  //   width: 12px;
+  //   height: 12px;
+  //   border-radius: 50%;
+  //   position: absolute;
+
+  // }
 
   .about-section .container {
 
@@ -67,4 +146,6 @@
     max-width: 800px;
     margin: auto;
   }
+
+  
 }

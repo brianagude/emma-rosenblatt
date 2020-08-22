@@ -5,7 +5,7 @@
   }
 
   .menu-body {
-    li { background-color: $gray; }
+    li { background-color: transparentize($gray, 0.5); }
   }
 
   .photography-section {

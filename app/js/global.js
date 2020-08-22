@@ -1,6 +1,14 @@
 $(document).ready(function () {
+  slideMenu()
+  reviewsCarousel()
+  imgSlides()
+  photographyParams()
+  dropdownMenu()
 
-  // slide in menu
+});
+
+// slide in menu ------------------------------------------------------------------------------------------------------
+function slideMenu() {
   const menuOpen = $('.menu-open');
   const menuClose = $('.menu-close');
   const menu = $('.slide-in-menu');
@@ -12,14 +20,13 @@ $(document).ready(function () {
   $(menuClose).on('click', function () {
     $(menu).addClass('closed');
   })
-});
+}
 
-$(document).ready(function () {
+// reviews carousel ------------------------------------------------------------------------------------------------------
 
+function reviewsCarousel() {
   if ($('.reviews-wrapper').length) {
-    console.log('yes')
-
-    $('.reviews-wrapper').slick({
+    $('.reviews-wrapper .container').slick({
       dots: true,
       arrows: false,
       infinite: true,
@@ -31,7 +38,7 @@ $(document).ready(function () {
 
       responsive: [
         {
-          breakpoint: 1023,
+          breakpoint: 14439,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3
@@ -47,20 +54,17 @@ $(document).ready(function () {
       ]
     });
   }
-});
+}
 
+// image slides ------------------------------------------------------------------------------------------------------
 
-
-
-$(document).ready(function () {
+function imgSlides() {
   if ($('.slides').length) {
     // pick all of the images and layer them based on the z-index
-
     const slideArea = document.querySelector("div.slides")
     const images = slideArea.querySelectorAll("img")
 
     // keep track of 1. which slide are we on 2. z-index
-
     let currentSlide = 0
     let z = 1
 
@@ -100,4 +104,33 @@ $(document).ready(function () {
       })
     })
   }
-});
+}
+
+// photography page content swap --------------------------------------------------------------------------------------------
+function photographyParams() {
+  url = new URL(window.location.href);
+
+  if (url.searchParams.get('page')) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageParam = urlParams.get('page');
+    const image = $('.photography-section img')
+
+    $(image).hide().filter("[data-page=" + pageParam + "]").show();
+    $('.photo-category').html(pageParam);
+  }
+}
+
+// dropdown menu --------------------------------------------------------------------------------------------
+function dropdownMenu() {
+  $(".dropdown-menu").click(function () {
+    $(this).find(".dropdown-body").slideToggle("fast");
+    $(this).toggleClass('open');
+  });
+  // });
+  $(document).on("click", function (event) {
+    var $trigger = $(".dropdown-menu");
+    if ($trigger !== event.target && !$trigger.has(event.target).length) {
+      $(".dropdown-body").slideUp("fast");
+    }
+  });
+}

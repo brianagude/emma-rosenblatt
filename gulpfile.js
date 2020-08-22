@@ -60,7 +60,7 @@ function watch() {
   });
 
   gulp.watch(files.scss).on('change', style);
-  gulp.watch("app/*.html").on('change', reload);
+  gulp.watch("app/*").on('change', reload);
 }
 
 exports.watch = watch
