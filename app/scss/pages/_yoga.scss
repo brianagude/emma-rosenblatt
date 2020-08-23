@@ -127,9 +127,8 @@
       line-height: 1.33;
     }
 
-    .offerings,
-    .description {
-      
+    .offerings {
+      margin-top: 20px;
 
       h6 {
         font-weight: 400;
@@ -163,10 +162,6 @@
       //   @include border($orange);
       //   padding: 4px; 
       // }
-    }
-
-    .offerings {
-      margin-top: 20px;
     }
 
     @include bp(md){

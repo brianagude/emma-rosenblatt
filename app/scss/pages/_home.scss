@@ -10,21 +10,68 @@
   }
 
   .rose-menu-wrapper {
+    
     padding: 16px;
     min-height: calc(100vh - 152px);
     display: flex;
     align-items: center;
     justify-content: center;
 
-    a { display: none; }
-
     .menu {
-      max-width: 620px; 
+      max-width: 640px; 
+      position: relative;
+
+      &:hover a { opacity: 0.3; }
+    }
+
+    a { 
+      display: none; 
+      transition: opacity 0.2s;
+      &:hover { opacity: 1 !important; }
     }
 
     @include bp(sm){
-      a { display: inline-block; }
+      a { display: block; }
       min-height: calc(100vh - 168px);
+    }
+  }
+
+  .link {
+    &-hero {
+      position: absolute;
+    }
+
+    &-contact {
+      top: 385px;
+      right: 96px;
+    }
+
+    &-yoga {
+      top: 238px;
+      right: 70px;
+    }
+
+    &-lifestyle {
+      top: 137px;
+      left: 3px;
+      width: 87px;
+    }
+
+    &-movement {
+      top: 300px;
+      right: 182px;
+      transform: rotate(-2deg);
+    }
+
+    &-occasions {
+      top: 415px;
+      left: 135px;
+    }
+
+    &-portraits {
+      top: 21px;
+      left: 176px;
+      width: 140px;
     }
   }
   
