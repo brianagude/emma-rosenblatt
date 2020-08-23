@@ -1,4 +1,5 @@
 .homepage {
+  // default color settings ---------------------------------
   background-color: $yellow-light; 
 
   .slide-in-menu {
@@ -9,28 +10,34 @@
     li { background-color: $yellow; }
   }
 
+  // styling -----------------------------
+
   .rose-menu-wrapper {
-    
     padding: 16px;
-    min-height: calc(100vh - 152px);
+    min-height: calc(100vh - 176px);
     display: flex;
     align-items: center;
     justify-content: center;
-
+  
     .menu {
-      max-width: 640px; 
+      max-width: 600px; 
       position: relative;
 
-      &:hover a { opacity: 0.3; }
+      @include bp(md){
+        max-width: 640px; 
+      }
     }
 
     a { 
       display: none; 
       transition: opacity 0.2s;
-      &:hover { opacity: 1 !important; }
     }
 
     @include bp(sm){
+      min-height: calc(100vh - 176px);
+    }
+
+    @include bp(md){
       a { display: block; }
       min-height: calc(100vh - 168px);
     }
@@ -74,5 +81,11 @@
       width: 140px;
     }
   }
-  
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 }

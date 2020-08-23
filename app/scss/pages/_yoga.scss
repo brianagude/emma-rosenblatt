@@ -1,4 +1,5 @@
 .yoga-page {
+  // default cfolor settings -----------------------
   background-color: $orange-light; 
 
   .slide-in-menu {
@@ -17,20 +18,26 @@
     }
   }
 
-  .slides {
-    margin-top: 80px;
-
-    @include bp(md){
-      margin-top: 0; 
-    }
-  }
-
-  .content .container, 
   .review,
   .offerings,
   .description {
     @include border($orange);
   }
+
+  // styling ---------------------------------------------
+
+  .slides {
+    margin-top: 80px;
+
+    @include bp(md){
+      margin-top: 0; 
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  .content .container, 
+  
 
   .review {
     margin: 0 24px; 
@@ -44,8 +51,6 @@
       font-weight: 400;
       margin-top: 16px; 
       display: inline-block;
-      // margin-left: auto;
-      // text-align: right;
     }
   }
 
@@ -54,7 +59,6 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 24px; 
-
 
     button {
       position: relative; 
@@ -71,10 +75,8 @@
         position: absolute;
       }
 
-      &:hover {
-        &:before {
-          background-color: $orange;
-        }
+      &:hover:before {
+        background-color: $orange;
       }
     }
 
@@ -83,47 +85,18 @@
     }
   }
 
-  // .slick-dots button { 
-  //   position: relative; 
-  //   color: transparent;
-  //   margin: 0 8px;
-  //   // display: none; 
-
-  //   &:hover {
-  //     &:before {
-  //       background-color: $orange;
-  //     }
-  //   }
-  // }
-
-  // .slick-dots .slick-active button:before {
-  //   background-color: $orange;
-  // }
-
-  // .slick-dots button:before {
-  //   content: '';
-  //   background-color: transparent;
-  //   border: $orange 2px solid;
-  //   width: 12px;
-  //   height: 12px;
-  //   border-radius: 50%;
-  //   position: absolute;
-
-  // }
-
-  .about-section .container {
+  .about-section  {
+    .container { position: relative; }
 
     a {
       font-size: 20px; 
       font-weight: 400;
-      // margin: 16px 0;
       margin-top: 16px; 
     }
 
     p { margin-top: 16px; }
 
     h5 {
-      // font-style: italic;
       line-height: 1.33;
     }
 
@@ -144,36 +117,18 @@
       a {
         margin-top: 36px; 
         display: inline-block;
-
         &:hover { text-decoration: underline; }
       }
-
-      // a:hover { 
-        
-        
-      // }
-
-      // a {
-      //   text-decoration: underline;
-      // }
-
-      // .btn {
-      //   display: inline-block;
-      //   @include border($orange);
-      //   padding: 4px; 
-      // }
     }
 
     @include bp(md){
-      // padding: 40px 80px; 
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 32px; 
-      // align-items: center;
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px; 
+      }
 
       .content { margin-bottom: 0; }
-
-      // .features { grid-column: 1/-1; }
     }
   }
 
@@ -181,6 +136,4 @@
     max-width: 800px;
     margin: auto;
   }
-
-  
 }

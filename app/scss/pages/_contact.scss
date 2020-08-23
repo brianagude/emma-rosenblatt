@@ -1,12 +1,7 @@
 .contact-page {
+  //  default color settings -----------------------------
   background-color: $green-light; 
-
-  // .dropdown-body .open {
-  //   @include bp(md){
-  //     background-color: transparentize($green-light, 50%);
-  //   }
-  // }
-
+  
   .slide-in-menu {
     background-color: $green-light; 
   }
@@ -28,34 +23,31 @@
     @include border($green);
   }
 
-  .about-section .container {
+  // styling -------------------------
 
+  .about-section {
     a {
       font-size: 20px; 
       font-weight: 400;
-      // margin: 16px 0;
       margin-top: 16px; 
     }
 
     p { margin-top: 16px; }
 
     @include bp(md){
-      // padding: 40px 80px; 
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      grid-gap: 32px; 
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-gap: 32px; 
+      }
 
       .content { margin-bottom: 0; }
-
-      // .features { grid-column: 1/-1; }
     }
   }
 
   .features {
-    h4 {
-      text-align: center; 
-    }
+    h4 { text-align: center; }
 
     @include bp(md){
       grid-column: 1/-1;
@@ -72,13 +64,6 @@
 
   .slides,
   .content { margin-bottom: 24px; }
-
-  // .instagram-dt {
-  //   display: none; 
-  //   @include bp
-  // }
-
-  
 }
 
 

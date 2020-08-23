@@ -4,7 +4,7 @@ $(document).ready(function () {
   imgSlides()
   photographyParams()
   dropdownMenu()
-
+  linkHover()
 });
 
 // slide in menu ------------------------------------------------------------------------------------------------------
@@ -134,3 +134,18 @@ function dropdownMenu() {
     }
   });
 }
+
+
+// rose menu link hover --------------------------------------------------------------------------------------------
+function linkHover() {
+  if ($('.rose-menu-wrapper').length) {
+    $(".rose-menu-wrapper a").hover(function () {
+      $(".rose-menu-wrapper a").animate({ 'opacity': '0.3' }, 50);
+      $(this).animate({ 'opacity': '1' }, 50);
+    },
+      function () {
+        $('.rose-menu-wrapper a').animate({ 'opacity': '1' }, 50);
+      });
+  }
+}
+
