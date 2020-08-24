@@ -100,26 +100,7 @@
       line-height: 1.33;
     }
 
-    .offerings {
-      margin-top: 20px;
-
-      h6 {
-        font-weight: 400;
-        margin-top: 24px;
-        margin-bottom: 0;
-      }
-
-      p {
-        font-size: 16px;
-        margin-top: 8px; 
-      }
-
-      a {
-        margin-top: 36px; 
-        display: inline-block;
-        &:hover { text-decoration: underline; }
-      }
-    }
+    
 
     @include bp(md){
       .container {
@@ -129,6 +110,27 @@
       }
 
       .content { margin-bottom: 0; }
+    }
+  }
+
+  .offerings {
+    margin-top: 20px;
+
+    h6 {
+      font-weight: 400;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 8px; 
+    }
+
+    a {
+      margin-top: 36px; 
+      display: inline-block;
+      &:hover { text-decoration: underline; }
     }
   }
 

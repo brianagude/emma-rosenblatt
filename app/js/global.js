@@ -90,8 +90,8 @@ function imgSlides() {
 
     slideArea.addEventListener("mouseover", function () {
       images.forEach(image => {
-        const x = 25 * (Math.floor(Math.random() * 5)) - 50
-        const y = 25 * (Math.floor(Math.random() * 5)) - 50
+        const x = 5 * (Math.floor(Math.random() * 5))
+        const y = 5 * (Math.floor(Math.random() * 5))
 
         image.style.transform = `translate(${x}px, ${y}px)`
       })
@@ -126,7 +126,7 @@ function dropdownMenu() {
     $(this).find(".dropdown-body").slideToggle("fast");
     $(this).toggleClass('open');
   });
-  // });
+
   $(document).on("click", function (event) {
     var $trigger = $(".dropdown-menu");
     if ($trigger !== event.target && !$trigger.has(event.target).length) {
@@ -134,7 +134,6 @@ function dropdownMenu() {
     }
   });
 }
-
 
 // rose menu link hover --------------------------------------------------------------------------------------------
 function linkHover() {

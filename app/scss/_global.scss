@@ -10,6 +10,10 @@
   border: solid 5px $color; 
   border-radius: 4px;
   background-color: transparentize($color, 0.6);
+
+  @include bp(sm){
+    padding: 24px; 
+  }
 }
 
 @mixin form($color) {
@@ -144,8 +148,6 @@ header {
 
   & > * { margin-left: 24px; }
 
-  
-
   @include bp(md){
     display: flex; 
   }
@@ -170,15 +172,7 @@ header {
 
 .dropdown {
   &-body {
-    // background-color: 
-    // opacity: 0;
-    // transition: opacity 1s;
-    // transform: translateY(200%);
     display: none;
-
-    // a { font-size: 16px; }
-
-    // li + li { margin-top: 4px; }
   }
 
   &-menu {
@@ -186,44 +180,10 @@ header {
     &.open {
       .dropdown-btn {
         font-weight: 400;
-        // margin-bottom: 8px;
       }
-
-      // .dropdown-body {
-      //   opacity: 1;
-      //   transform: translateY(0);
-      // }
     }
-
   }
-
-
 }
-
-// .dropdown-menu {
-//   &-open {
-
-//   }
-// }
-
-// .dropdown {
-//   &-body {
-
-//   }
-// }
-
-// .dropdown-body {
-//   min-width: 100%;
-//   // background: #f2f2f2;
-//   // display: none;
-//   position: absolute;
-//   z-index: 999;
-//   left: 0;
-// }
-
-// .dropdown-body li{
-//   display: block;
-// }
 
 .menu {
   &-btn {
@@ -275,6 +235,8 @@ header {
     margin: 0 auto;
   }
 }
+
+.about-section { padding-top: 0; }
 
 .contact-section .container {
   .instagram-dt { display: none; }
