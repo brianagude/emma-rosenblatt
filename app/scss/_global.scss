@@ -17,7 +17,9 @@
 }
 
 @mixin form($color) {
-  padding: 16px 0; 
+  // padding: 16px 0; 
+  // padding 
+  // margin-top: 16px; 
   input, 
   textarea,
   button,
@@ -50,6 +52,7 @@
   button {
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 0;
   }
 
   input { height: 48px; }
@@ -226,37 +229,54 @@ header {
 .page-section {
   padding: 40px 16px; 
 
-  @include bp(sm){
-    padding: 40px 64px;
-  }
-
   & > .container {
     max-width: 1440px;
     margin: 0 auto;
+
+    padding: 0;
   }
+
+  // @include bp(sm){
+  //   padding: 40px 64px;
+  // }
 }
 
 .about-section { padding-top: 0; }
 
-.contact-section .container {
+.contact-section {
+  .contact-form {padding-top: 24px; }
   .instagram-dt { display: none; }
 
+  h4 { 
+    text-align: center; 
+    margin-bottom: 16px; 
+  }
+
   @include bp(md){
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 32px; 
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-gap: 32px; 
+    }
     .instagram-dt { display: block; }
     .instagram-mb { display: none; }
   }
 }
 
 .slides {
-  height: 65vh;
+  height: 432px;
+  // height: 65vh;
   max-height: 700px;
-  width: 75vw;
+  // width: 75vw;
+  width: 288px; 
   max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
+
+  margin: {
+    left: auto;
+    right: auto;
+    bottom: 24px; 
+  }
+
   position: relative;
 
   img {
@@ -317,6 +337,7 @@ footer {
 
   .social-links {
     text-align: center;
+    img { height: 24px; }
   }
 
   @include bp(sm){
