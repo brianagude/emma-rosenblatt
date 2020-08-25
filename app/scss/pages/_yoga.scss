@@ -18,47 +18,12 @@
     }
   }
 
-  .review,
-  .classes,
-  .description {
-    @include border($orange);
-  }
-
   .dropdown-body {
     background-color: $orange;
   }
 
-//   // styling ---------------------------------------------
+// styling ---------------------------------------------
 
-//   .slides {
-//     margin-top: 80px;
-
-//     @include bp(md){
-//       margin-top: 0; 
-//       position: sticky;
-//       top: 0;
-//     }
-//   }
-
-//   // .content .container, 
-  
-
-//   .review {
-//     margin: 0 24px; 
-
-//     &-text {
-//       // font-size: 16px; 
-//       font-size: $base-unit; 
-//     }
-
-//     &-attribution {
-//       // font-size: 12px; 
-//       font-size: $base-unit; 
-//       font-weight: 400;
-//       margin-top: 16px; 
-//       display: inline-block;
-//     }
-//   }
 
 .review {
   @include bp(md){ padding-left: 0; }
@@ -105,66 +70,8 @@
       flex-direction: column;
       align-items: center;
       position: absolute;
-      // top: 50%;
       top: 0;
       left: 0;
-      // transform: translateY(-50%);
     }
   }
-
-//   .about-section  {
-//     .container { position: relative; }
-
-//     a {
-//       // font-size: 20px; 
-//       font-size: $base-unit; 
-//       font-weight: 400;
-//       margin-top: 16px; 
-//     }
-
-//     p { margin-top: 16px; }
-
-//     h5 {
-//       line-height: 1.33;
-//     }
-
-    
-
-//     @include bp(md){
-//       .container {
-//         display: grid;
-//         grid-template-columns: 1fr 1fr;
-//         grid-gap: 32px; 
-//       }
-
-//       .content { margin-bottom: 0; }
-//     }
-//   }
-
-//   .offerings {
-//     margin-top: 20px;
-
-//     h6 {
-//       font-weight: 400;
-//       margin-top: 24px;
-//       margin-bottom: 0;
-//     }
-
-//     p {
-//       // font-size: 16px;
-//       font-size: $base-unit; 
-//       margin-top: 8px; 
-//     }
-
-//     a {
-//       margin-top: 36px; 
-//       display: inline-block;
-//       &:hover { text-decoration: underline; }
-//     }
-//   }
-
-//   form {
-//     max-width: 800px;
-//     margin: auto;
-//   }
 }

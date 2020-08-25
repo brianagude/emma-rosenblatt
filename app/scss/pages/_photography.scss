@@ -32,14 +32,7 @@
       margin-top: 24px;
     }
 
-    @include bp(sm){
-      // .container {
-      //   display: grid;
-      //   grid-template-columns: 1fr 1fr;
-      //   grid-column-gap: 24px;
-      //   grid-row-gap: 36px;
-      // }
-      
+    @include bp(sm) {
       .vert { grid-row: auto /span 2; }
       img + img { margin-top: 0; }
     }

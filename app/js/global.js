@@ -34,26 +34,18 @@ function reviewsCarousel() {
       slidesToShow: 1,
       slidesToScroll: 1,
       mobileFirst: true,
-      // adaptiveHeight: true,
+      adaptiveHeight: true,
       autoplay: true,
       autoplaySpeed: 2000,
 
-      // responsive: [
-      //   {
-      //     breakpoint: 14439,
-      //     settings: {
-      //       slidesToShow: 3,
-      //       slidesToScroll: 3
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 767,
-      //     settings: {
-      //       slidesToShow: 2,
-      //       slidesToScroll: 2
-      //     }
-      //   }
-      // ]
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            adaptiveHeight: false,
+          }
+        }
+      ]
     });
   }
 }
@@ -62,6 +54,7 @@ function reviewsCarousel() {
 
 function imgSlides() {
   if ($('.slides').length) {
+
     // pick all of the images and layer them based on the z-index
     const slideArea = document.querySelector("div.slides")
     const images = slideArea.querySelectorAll("img")

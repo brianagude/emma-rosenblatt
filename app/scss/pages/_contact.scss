@@ -18,60 +18,11 @@
     }
   }
 
-  .content .container, 
-  .features {
-    @include border($green);
-  }
-
   .dropdown-body {
     background-color: $green;
   }
 
-//   // styling -------------------------
-
-//   .about-section {
-//     a {
-//       // font-size: 20px; 
-//       font-size: $base-unit; 
-//       font-weight: 400;
-//       margin-top: 16px; 
-//     }
-
-//     p { margin-top: 16px; }
-
-//     // @include bp(md){
-//     //   .container {
-//     //     display: grid;
-//     //     // grid-template-columns: 1fr 1fr;
-//     //     grid-template-columns: 420px 420px;
-//     //     align-items: center;
-//     //     grid-gap: $base-unit * 4; 
-//     //     margin: auto;
-//     //     max-width: 1000px; 
-//     //   }
-
-//     //   .content { margin-bottom: 0; }
-//     // }
-//   }
-
-//   .features {
-//     h4 { text-align: center; }
-
-//     @include bp(md){
-//       grid-column: 1/-1;
-
-//       ul {
-//         display: grid;
-//         grid-template-columns: repeat(3, 1fr);
-//         grid-column-gap: 24px; 
-//         grid-row-gap: 8px; 
-//         margin-top: 16px;
-//       }
-//     }
-//   }
-
-//   // .slides,
-//   // .content { margin-bottom: 24px; }
+  // styling ------------------------------------------
 }
 
 
