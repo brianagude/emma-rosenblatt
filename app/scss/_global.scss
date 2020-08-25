@@ -13,12 +13,18 @@
     width: 100%;
     border: 2px solid $color;
     border-radius: 4px;
-    line-height: 1.33;
-    font-family: $font-primary;
-    font-weight: 300;
+    
 
     padding: $base-unit / 2;
     margin: $base-unit / 4;
+
+    &::placeholder {
+      line-height: 1.33;
+      font-family: $font-primary;
+      font-size: $base-unit;
+      font-weight: 300;
+      color: $black;
+    }
 
     &:hover,
     &:focus {
@@ -60,9 +66,9 @@ header {
   width: 100%;
   padding: $base-unit;
 
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
 
   .header-logo { width: 240px; }
   .page-tracker { width: auto; }
@@ -87,6 +93,10 @@ header {
     .header-logo { width: 360px; }
     .page-tracker { text-align: right; }
   }
+}
+
+.menu-btn {
+  z-index: 2;
 }
 
 .slide-in-menu {
@@ -216,7 +226,7 @@ header {
 
   .container {
     max-width: 1440px;
-    min-height: 100vh;
+    // min-height: 100vh;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -230,6 +240,15 @@ header {
     }
   }
 
+  @include bp(sm){
+    padding: {
+      top: 48px;
+      bottom: 56px;
+      left: 48px;
+      right: 48px;
+    }
+  }
+
   @include bp(md){
     padding: 0;
 
@@ -240,10 +259,30 @@ header {
       grid-gap: $base-unit * 6; 
       margin: auto;
       max-width: 1000px; 
+      min-height: 100vh;
     }
 
     .content { margin-bottom: 0; }
   }
+}
+
+.about-section {
+  h4 { 
+      margin-bottom: $base-unit / 4; 
+      font-weight: 500;
+    }
+
+    h5 { 
+      margin-bottom: $base-unit / 2; 
+      font-weight: 400;
+    }
+
+    h6 {
+      font-weight: 400;
+      margin-bottom: $base-unit / 4; 
+    }
+
+    p { margin-bottom: $base-unit; }
 }
 
 .contact-section {
@@ -257,10 +296,10 @@ header {
 
 .slides {
   top: 0;
-  height: 50vh;
-  max-height: 700px;
-  width: 75vw;
-  max-width: 420px;
+  height: 400px;
+  width: 240px;
+
+  
 
   margin: {
     left: auto;
@@ -285,6 +324,13 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
+  @include bp(md){
+    height: 65vh;
+    max-height: 700px;
+    width: 75vw;
+    max-width: 420px;
+  }
+
 
   @include bp(lg){
     margin-top: $base-unit * 1.5; 
@@ -294,10 +340,7 @@ header {
 // footer ------------------------------------------------------------------------------------
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; 
+  
   padding: 16px; 
   z-index: 0;
 
@@ -321,11 +364,17 @@ footer {
     img { height: 24px; }
   }
 
-  @include bp(sm){
+  @include bp(md){
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
     text-align: left; 
 
     .social-links {
       text-align: left; 
     }
   }
+
+  // @include bp(md) 
 }

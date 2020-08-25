@@ -17,32 +17,44 @@
   // styling ---------------------------------------------
 
   .photography-section {
-    margin-top: 80px; 
-    padding: 24px;
-    .container { min-height: 0; }
+    // margin-top: 80px; 
+    // padding: 24px;
+    .container { 
+      min-height: 0; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     img {
       transition: box-shadow 0.5s;
       max-height: 90vh;
       
       &:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+      &:last-of-type { margin-bottom: 0; }
     }
 
     img + img {
-      margin-top: 24px;
+      margin-bottom: 24px;
     }
 
     @include bp(sm) {
-      .vert { grid-row: auto /span 2; }
-      img + img { margin-top: 0; }
+      img + img {
+        margin-bottom: 32px;
+      }
     }
 
     @include bp(md){
       .container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: $base-unit * 1.5;
         align-items: flex-start;
       }
+
+      .vert { grid-row: auto /span 2; }
+
+      img + img { margin-bottom: 0; }
     }
   }
 }

@@ -38,14 +38,14 @@ function reviewsCarousel() {
       autoplay: true,
       autoplaySpeed: 2000,
 
-      responsive: [
-        {
-          breakpoint: 1023,
-          settings: {
-            adaptiveHeight: false,
-          }
-        }
-      ]
+      // responsive: [
+      //   {
+      //     breakpoint: 1023,
+      //     settings: {
+      //       adaptiveHeight: false,
+      //     }
+      //   }
+      // ]
     });
   }
 }
@@ -83,36 +83,43 @@ function imgSlides() {
       images[currentSlide].style.animation = "fade 0.5s"
     })
 
-    // slideArea.addEventListener("mouseover", function () {
-    images.forEach(image => {
-      const x = 25 * (Math.floor(Math.random() * 5)) - 50
-      const y = 25 * (Math.floor(Math.random() * 5)) - 50
+    function smallScreens() {
+      images.forEach(image => {
+        const x = 5 * (Math.floor(Math.random() * 5))
+        const y = 5 * (Math.floor(Math.random() * 5))
 
-      image.style.transform = `translate(${x}px, ${y}px)`
-    })
-    // })
+        image.style.transform = `translate(${x}px, ${y}px)`
+      })
+    }
 
-    slideArea.addEventListener("mouseover", function () {
+    function largeScreens() {
       images.forEach(image => {
         const x = 25 * (Math.floor(Math.random() * 5)) - 50
         const y = 25 * (Math.floor(Math.random() * 5)) - 50
 
         image.style.transform = `translate(${x}px, ${y}px)`
       })
-      // images.forEach(image => {
-      //   const x = 5 * (Math.floor(Math.random() * 5))
-      //   const y = 5 * (Math.floor(Math.random() * 5))
+    }
 
-      //   image.style.transform = `translate(${x}px, ${y}px)`
-      // })
-    })
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var windowsize = $window.width();
 
-    // when I move my mouse away, put the images back
-    // slideArea.addEventListener(`mouseout`, function () {
-    //   images.forEach(image => {
-    //     image.style.transform = ``
-    //   })
-    // })
+    function checkWidth() {
+      if (windowsize < 1024) {
+        smallScreens()
+        slideArea.addEventListener("mouseover", smallScreens)
+      } else {
+        largeScreens()
+        slideArea.addEventListener("mouseover", largeScreens)
+      }
+    }
+
+    // Execute on load
+    checkWidth();
+
+    // Bind event listener
+    $(window).resize(checkWidth);
   }
 }
 
@@ -137,7 +144,7 @@ function dropdownMenu() {
     $(this).toggleClass('open');
   });
 
-  // $(".dropdown-menu").mouseenter(function () {
+  // $(".dropdown-menu").hover(function () {
   //   $(this).find(".dropdown-body").slide("fast");
   //   $(this).toggleClass('open');
   // });

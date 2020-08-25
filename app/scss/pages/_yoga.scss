@@ -23,7 +23,29 @@
   }
 
 // styling ---------------------------------------------
+.about-section {
 
+  // a:hover { color: $orange; }
+
+  .description {
+    border-bottom: 1px solid $black;
+    margin-bottom: $base-unit;
+  }
+
+  @include bp(sm){
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 24px;
+    }
+  }
+
+  @include bp(md){
+    .container {
+      grid-gap: $base-unit * 6; 
+    }
+  }
+}
 
 .review {
   @include bp(md){ padding-left: 0; }
