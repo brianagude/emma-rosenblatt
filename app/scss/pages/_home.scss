@@ -14,7 +14,8 @@
 
   .rose-menu-wrapper {
     padding: 16px;
-    min-height: calc(100vh - 176px);
+    // min-height: calc(100vh - 176px);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,12 +35,12 @@
     }
 
     @include bp(sm){
-      min-height: calc(100vh - 176px);
+      // min-height: calc(100vh - 176px);
     }
 
     @include bp(md){
       a { display: block; }
-      min-height: calc(100vh - 168px);
+      // min-height: calc(100vh - 168px);
     }
   }
 

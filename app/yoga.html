@@ -84,6 +84,13 @@
 
   <section class="about-section page-section">
     <div class='container'>
+      <div class='slides'>
+        <img src='./img/yoga/emma-yoga-2.jpg' class='slide' />
+        <img src='./img/yoga/emma-yoga-1.jpg' class='slide' />
+        <img src='./img/yoga/emma-yoga-3.jpg' class='slide' />
+        <img src='./img/yoga/emma-yoga-4.jpg' class='slide' />
+        <img src='./img/yoga/emma-yoga-5.jpg' class='slide' />
+      </div>
 
       <div class="content">
         <div class='content-wrapper'>
@@ -96,22 +103,30 @@
             felt compelled to bring that same healing & peace to everyone
             else.</p>
           </div>
-          <div class="offerings">
+          <div class="classes">
             <h4>Available Classes</h4>
 
-            <h6>1 on 1 Sessions</h6> 
-            <p>Create the type of class that YOU want. The time and space is all yours!</p>
+            <div class="class">
+              <h6>1 on 1 Sessions</h6>
+              <p>Create the type of class that YOU want. The time and space is all yours!</p>
+            </div>
 
-            <h6>Group Sessions (up to 8)</h6> 
-            <p>Move and breathe with family or friends.</p>
+            <div class="class">
+              <h6>Group Sessions (up to 8)</h6>
+              <p>Move and breathe with family or friends.</p>
+            </div>
 
-            <h6>Events/Workshops</h6> 
-            <p>Hosting an event? Offer a yoga + meditation session to set the tone.</p>
+            <div class="class">
+              <h6>Events/Workshops</h6>
+              <p>Hosting an event? Offer a yoga + meditation session to set the tone.</p>
+            </div>
 
-            <h6>Certifications</h6> 
-            <p>200hr ERYT in Power, Sculpt, Yin + meditation with the addition of yoga/barre
-            classes stemming from my ballet background.</p>
-
+            <div class="class">
+              <h6>Certifications</h6>
+              <p>200hr ERYT in Power, Sculpt, Yin + meditation with the addition of yoga/barre
+                classes stemming from my ballet background.</p>
+            </div>
+            
             <a href='#contact-form' class='btn'>Book a Class Now!</a>
           </div>
 
@@ -120,19 +135,21 @@
       </div>
 
 
-      <div class='slides'>
+      <!-- <div class='slides'>
         <img src='./img/yoga/emma-yoga-2.jpg' class='slide' />
         <img src='./img/yoga/emma-yoga-1.jpg' class='slide' />
         <img src='./img/yoga/emma-yoga-3.jpg' class='slide' />
         <img src='./img/yoga/emma-yoga-4.jpg' class='slide' />
         <img src='./img/yoga/emma-yoga-5.jpg' class='slide' />
-      </div>
+      </div> -->
     </div>
   </section>
 
-  <section class="reviews-wrapper page-section">
-    <!-- <h5>Reviews</h5> -->
+  <section class="reviews-section page-section small-section">
+    
     <div class='container'>
+      <h3>Reviews</h3>
+      <div class="reviews-wrapper">
       <div class='review'>
         <p class='review-text'>
           My private Yoga Session with Emma brought me back to center. It was the
@@ -202,13 +219,14 @@
           Natalia A.
         </small>
       </div>
+      </div>
     </div>
   </section>
 
   <section class='contact-section page-section'>
     <div class='container'>
       <div class='instagram-dt'>
-        <h4>@emma_rosenblatt</h4>
+        <!-- <h4>@emma_rosenblatt</h4> -->
         <!-- LightWidget WIDGET -->
         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
           src="//lightwidget.com/widgets/d35c53fcbacb50f982f606e9c561b534.html" scrolling="no" allowtransparency="true"
@@ -216,7 +234,7 @@
       </div>
 
       <div class='instagram-mb'>
-        <h4>@emma_rosenblatt</h4>
+        <!-- <h4>@emma_rosenblatt</h4> -->
         <!-- LightWidget WIDGET -->
         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
           src="//lightwidget.com/widgets/37c77cb851b356e0abd0e71dbc0cb8ac.html" scrolling="no" allowtransparency="true"
@@ -224,18 +242,18 @@
       </div>
 
       <form name="yoga" method="POST" data-netlify="true" id='contact-form'>
-        <label>Name: * <input type="text" name="name" required /></label>
-        <label>Email: * <input type="email" name="email" required /></label>
+        <label><input type="text" name="name" placeholder="Name: *" required /></label>
+        <label><input type="email" name="email" placeholder="Email: *" required /></label>
 
-        <label for="classes">Session Type: *
-          <select name="classes" id="classes" required>
+        <label for="classes">
+          <select name="classes" id="classes" placeholder="Session Type: *" required>
             <option value="1o1">1-on-1</option>
             <option value="group">Group Sessions (1 to 8)</option>
             <option value="event">Event or Workshops</option>
           </select>
         </label>
 
-        <label>Message: <textarea name="message"></textarea></label>
+        <label> <textarea name="message" placeholder="Message:"></textarea></label>
         <button type="submit">Send</button>
       </form>
     </div>

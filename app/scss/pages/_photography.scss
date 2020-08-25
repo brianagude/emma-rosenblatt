@@ -10,9 +10,17 @@
     li { background-color: transparentize($gray, 0.5); }
   }
 
+  .dropdown-body {
+    background-color: $gray;
+  }
+
   // styling ---------------------------------------------
 
   .photography-section {
+    margin-top: 80px; 
+    padding: 24px;
+    .container { min-height: 0; }
+
     img {
       transition: box-shadow 0.5s;
       max-height: 90vh;
@@ -25,12 +33,12 @@
     }
 
     @include bp(sm){
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 24px;
-        grid-row-gap: 36px;
-      }
+      // .container {
+      //   display: grid;
+      //   grid-template-columns: 1fr 1fr;
+      //   grid-column-gap: 24px;
+      //   grid-row-gap: 36px;
+      // }
       
       .vert { grid-row: auto /span 2; }
       img + img { margin-top: 0; }
@@ -39,6 +47,8 @@
     @include bp(md){
       .container {
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: $base-unit * 1.5;
+        align-items: flex-start;
       }
     }
   }

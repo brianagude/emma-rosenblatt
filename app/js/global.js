@@ -26,7 +26,7 @@ function slideMenu() {
 
 function reviewsCarousel() {
   if ($('.reviews-wrapper').length) {
-    $('.reviews-wrapper .container').slick({
+    $('.reviews-wrapper').slick({
       dots: true,
       arrows: false,
       infinite: true,
@@ -34,24 +34,26 @@ function reviewsCarousel() {
       slidesToShow: 1,
       slidesToScroll: 1,
       mobileFirst: true,
-      adaptiveHeight: true,
+      // adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
 
-      responsive: [
-        {
-          breakpoint: 14439,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }
-      ]
+      // responsive: [
+      //   {
+      //     breakpoint: 14439,
+      //     settings: {
+      //       slidesToShow: 3,
+      //       slidesToScroll: 3
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 767,
+      //     settings: {
+      //       slidesToShow: 2,
+      //       slidesToScroll: 2
+      //     }
+      //   }
+      // ]
     });
   }
 }
@@ -88,21 +90,36 @@ function imgSlides() {
       images[currentSlide].style.animation = "fade 0.5s"
     })
 
+    // slideArea.addEventListener("mouseover", function () {
+    images.forEach(image => {
+      const x = 25 * (Math.floor(Math.random() * 5)) - 50
+      const y = 25 * (Math.floor(Math.random() * 5)) - 50
+
+      image.style.transform = `translate(${x}px, ${y}px)`
+    })
+    // })
+
     slideArea.addEventListener("mouseover", function () {
       images.forEach(image => {
-        const x = 5 * (Math.floor(Math.random() * 5))
-        const y = 5 * (Math.floor(Math.random() * 5))
+        const x = 25 * (Math.floor(Math.random() * 5)) - 50
+        const y = 25 * (Math.floor(Math.random() * 5)) - 50
 
         image.style.transform = `translate(${x}px, ${y}px)`
       })
+      // images.forEach(image => {
+      //   const x = 5 * (Math.floor(Math.random() * 5))
+      //   const y = 5 * (Math.floor(Math.random() * 5))
+
+      //   image.style.transform = `translate(${x}px, ${y}px)`
+      // })
     })
 
     // when I move my mouse away, put the images back
-    slideArea.addEventListener(`mouseout`, function () {
-      images.forEach(image => {
-        image.style.transform = ``
-      })
-    })
+    // slideArea.addEventListener(`mouseout`, function () {
+    //   images.forEach(image => {
+    //     image.style.transform = ``
+    //   })
+    // })
   }
 }
 
@@ -126,6 +143,11 @@ function dropdownMenu() {
     $(this).find(".dropdown-body").slideToggle("fast");
     $(this).toggleClass('open');
   });
+
+  // $(".dropdown-menu").mouseenter(function () {
+  //   $(this).find(".dropdown-body").slide("fast");
+  //   $(this).toggleClass('open');
+  // });
 
   $(document).on("click", function (event) {
     var $trigger = $(".dropdown-menu");
