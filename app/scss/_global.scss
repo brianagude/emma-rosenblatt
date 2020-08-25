@@ -133,6 +133,7 @@ header {
   a { 
     display: inline-block; 
     height: max-content;
+    font-weight: 300; 
 
     &:hover { font-weight: 400; }
     &.current { 
