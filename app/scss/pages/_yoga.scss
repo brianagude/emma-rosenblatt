@@ -19,7 +19,8 @@
   }
 
   .dropdown-body {
-    background-color: $orange;
+    background-color: $orange-light;
+    border: $orange;
   }
 
 // styling ---------------------------------------------
@@ -72,7 +73,7 @@
 }
 
 .review {
-  border: solid 4px $orange;
+  border: solid 2px $orange;
   padding: 16px; 
   border-radius: 8px; 
 
@@ -95,6 +96,10 @@
 
   @include bp(sm){
     margin: 0 8px;
+  }
+
+  @include bp(md){
+    margin: 0 16px; 
   }
 }
 
@@ -127,15 +132,6 @@
 
     .slick-active button:before {
       background-color: $orange;
-    }
-
-    @include bp(md){ 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      left: 0;
     }
   }
 }

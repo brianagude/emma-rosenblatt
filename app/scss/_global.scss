@@ -164,8 +164,7 @@ header {
 
   @include bp(md){
     li + li { margin-top: 4px; }
-    padding: $base-unit / 2;
-    border-radius: 4px;
+    border-radius: 2px;
   }
 }
 
@@ -262,7 +261,7 @@ header {
   @include bp(md){
     .container {
       display: grid;
-      grid-template-columns: 420px 420px;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
       grid-gap: $base-unit * 6; 
       margin: auto;
@@ -274,6 +273,22 @@ header {
 
   @include bp(lg){
     padding: 64px;
+  }
+}
+
+.small-section {
+  @include bp(md){
+
+    .container {
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start;
+      grid-gap: 32px;
+    }
+
+    h3 {
+      font-size: $base-unit * 1.5;
+    }
   }
 }
 

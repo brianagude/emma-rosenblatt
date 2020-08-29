@@ -42,8 +42,10 @@ function reviewsCarousel() {
         {
           breakpoint: 1023,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
           }
         },
         {
