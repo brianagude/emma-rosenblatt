@@ -30,6 +30,13 @@
   .description {
     border-bottom: 1px solid $black;
     margin-bottom: $base-unit;
+    margin-top: 24px; 
+    padding-bottom: 16px; 
+
+  }
+
+  .classes h5 {
+    font-weight: 500;
   }
 
   @include bp(sm){
@@ -44,6 +51,12 @@
     .container {
       grid-gap: $base-unit * 6; 
     }
+  }
+}
+
+.reviews-section { 
+  .container {
+    min-height: 0; 
   }
 }
 

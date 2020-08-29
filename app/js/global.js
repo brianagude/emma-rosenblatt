@@ -36,13 +36,15 @@ function reviewsCarousel() {
       mobileFirst: true,
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 8000,
 
       // responsive: [
       //   {
       //     breakpoint: 1023,
       //     settings: {
-      //       adaptiveHeight: false,
+      //       // adaptiveHeight: false,
+      //       slidesToShow: 2,
+      //       slidesToScroll: 2,
       //     }
       //   }
       // ]

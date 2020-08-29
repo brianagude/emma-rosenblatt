@@ -13,13 +13,27 @@
   form {
     @include form($green);
 
-    @include bp(md){
+    @include bp(md){ // 170 84
       padding-top: 0; 
     }
   }
 
   .dropdown-body {
     background-color: $green;
+  }
+
+  .features-section {
+    .container { min-height: 0; }
+
+    @include bp(md){
+      padding-top: 86px;
+      // padding-bottom: 6px;
+    }
+  }
+
+  .content {
+    h4 { margin-bottom: 20px; }
+    a { margin-top: 4px; }
   }
 
   // styling ------------------------------------------
