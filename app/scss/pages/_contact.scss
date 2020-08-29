@@ -45,7 +45,7 @@
 
     @include bp(sm){
       grid-template-columns: 1fr 1fr 1fr;
-      .last-brand { grid-column: 1/-1; }
+      // .last-brand { grid-column: 1/-1; }
     }
   }
 

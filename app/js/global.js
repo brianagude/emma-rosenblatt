@@ -38,16 +38,22 @@ function reviewsCarousel() {
       autoplay: true,
       autoplaySpeed: 8000,
 
-      // responsive: [
-      //   {
-      //     breakpoint: 1023,
-      //     settings: {
-      //       // adaptiveHeight: false,
-      //       slidesToShow: 2,
-      //       slidesToScroll: 2,
-      //     }
-      //   }
-      // ]
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        }
+      ]
     });
   }
 }

@@ -58,23 +58,71 @@
   .container {
     min-height: 0; 
   }
+
+  h3 { 
+    margin-bottom: 24px; 
+    font-weight: 500;
+    text-align: center;
+  }
+
+  // .review 
+
+  @include bp(md){
+    h3 { 
+      margin-bottom: 0; 
+      text-align: left;
+    }
+  }
 }
 
 .review {
-  @include bp(md){ padding-left: 0; }
+  
+
+  border: solid 4px $orange;
+  padding: 16px; 
+  border-radius: 8px; 
+
+  &-text {
+    border-bottom: 1px solid $black;
+    padding-bottom: 16px;
+  }
+
+  &-attribution {
+    margin-top: 8px;
+    font-weight: 500px !important;
+    display: inline-block;
+    font-size: 12px;
+
+    span {
+      display: block;
+      font-size: 10px; 
+    }
+  }
+
+  @include bp(sm){
+    margin: 0 8px;
+  }
+
+  @include bp(md){ 
+    // padding-left: 0; 
+    // margin: 0;
+  }
+
+  
 }
 
-.slick-list {
-  @include bp(md){
-     margin-left: $base-unit * 3;
-  }
-}
+// .slick-list {
+  // @include bp(md){
+  //    padding-left: $base-unit * 3;
+  // }
+// }
 
   .slick-dots {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 24px; 
+    margin-left: -40px;
 
     button {
       position: relative; 
