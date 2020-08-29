@@ -103,19 +103,8 @@
     margin: 0 8px;
   }
 
-  @include bp(md){ 
-    // padding-left: 0; 
-    // margin: 0;
-  }
-
   
 }
-
-// .slick-list {
-  // @include bp(md){
-  //    padding-left: $base-unit * 3;
-  // }
-// }
 
   .slick-dots {
     display: flex;
