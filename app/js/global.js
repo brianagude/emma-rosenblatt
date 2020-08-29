@@ -5,6 +5,7 @@ $(document).ready(function () {
   photographyParams()
   dropdownMenu()
   linkHover()
+  smoothScroll()
 });
 
 // slide in menu ------------------------------------------------------------------------------------------------------
@@ -23,7 +24,6 @@ function slideMenu() {
 }
 
 // reviews carousel ------------------------------------------------------------------------------------------------------
-
 function reviewsCarousel() {
   if ($('.reviews-wrapper').length) {
     $('.reviews-wrapper').slick({
@@ -186,3 +186,20 @@ function linkHover() {
   }
 }
 
+// smooth scrolling -------------------------------------------------------------------------------------------------
+function smoothScroll() {
+  $("a").on('click', function (event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+
+        window.location.hash = hash;
+      });
+    }
+  });
+}

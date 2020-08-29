@@ -74,19 +74,19 @@
 
   .review {
     border: solid 2px $orange;
-    padding: 16px; 
+    // padding: 16px; 
     border-radius: 8px; 
 
     &-text {
-      border-bottom: 1px solid $black;
+      border-bottom: 2px solid $orange;
       padding-bottom: 16px;
+      padding: 16px;
     }
 
     &-attribution {
-      margin-top: 8px;
-      font-weight: 500px !important;
       display: inline-block;
       font-size: 12px;
+      padding: 16px;
 
       span {
         display: block;
@@ -100,6 +100,11 @@
 
     @include bp(md){
       margin: 0 16px; 
+      height: 440px;
+      display: flex;
+      flex-direction: column;
+
+      &-text { flex: 1; }
     }
   }
 
