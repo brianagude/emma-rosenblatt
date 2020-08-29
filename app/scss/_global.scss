@@ -38,17 +38,6 @@
     }
   }
 
-  // select {
-  //   background: $white;
-  //   border: 1px solid #ccc;
-  //   // border-radius: 5px;
-  //   color: white;
-  //   // text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-  //   -webkit-appearance: none;
-
-  //   height: 80px;
-  // }
-
   input,
   select {
     font-size: 10px; 
@@ -59,7 +48,6 @@
   }
 
   select {
-    // text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
     -webkit-appearance: none;
   }
 
@@ -67,15 +55,8 @@
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 0;
-    height: $base-unit * 2;
+    height: $base-unit * 2.5;
   }
-
-  // input,
-  // select { height: $base-unit * 3; }
-
-  // select {
-
-  // }
 
   textarea {
     resize: none; 
@@ -96,10 +77,6 @@ body { scroll-behavior: smooth;}
 header {
   width: 100%;
   padding: $base-unit;
-
-  // position: fixed;
-  // top: 0;
-  // left: 0;
 
   .header-logo { width: 240px; }
   .page-tracker { width: auto; }
@@ -255,10 +232,11 @@ header {
 
 .page-section {
   padding: 40px 16px 56px; 
+  position: relative;
+  z-index: 2;
 
   .container {
     max-width: 1440px;
-    // min-height: 100vh;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -282,8 +260,6 @@ header {
   }
 
   @include bp(md){
-    // padding: 0;
-
     .container {
       display: grid;
       grid-template-columns: 420px 420px;
@@ -291,14 +267,13 @@ header {
       grid-gap: $base-unit * 6; 
       margin: auto;
       max-width: 1000px; 
-      min-height: 100vh;
     }
 
     .content { margin-bottom: 0; }
   }
 
   @include bp(lg){
-    padding: 0;
+    padding: 64px;
   }
 }
 
@@ -349,7 +324,6 @@ header {
     left: 0;
     transition: transform 0.5s, box-shadow 0.5s;
     max-height: 500px;
-    // max-width: 600px;
     
     &:first-child {
       z-index: 1;
@@ -361,7 +335,7 @@ header {
   }
 
   @include bp(md){
-    height: 65vh;
+    height: 50vh;
     max-height: 700px;
     width: 75vw;
     max-width: 420px;
@@ -411,6 +385,4 @@ footer {
       text-align: left; 
     }
   }
-
-  // @include bp(md) 
 }

@@ -13,7 +13,7 @@
   form {
     @include form($green);
 
-    @include bp(md){ // 170 84
+    @include bp(md) { 
       padding-top: 0; 
     }
   }
@@ -22,13 +22,10 @@
     background-color: $green;
   }
 
+// styling ------------------------------------------
+
   .features-section {
     .container { min-height: 0; }
-
-    @include bp(md){
-      padding-top: 86px;
-      // padding-bottom: 6px;
-    }
   }
 
   .content {
@@ -45,15 +42,14 @@
 
     @include bp(sm){
       grid-template-columns: 1fr 1fr 1fr;
-      // .last-brand { grid-column: 1/-1; }
+
+      img:last-of-type {
+        grid-column: 1/-1;
+        max-width: 160px;
+        margin: auto;
+      }
     }
   }
-
-  // styling ------------------------------------------
-
-  // .about-section {
-  //   a:hover { color: $green; }
-  // }
 }
 
 

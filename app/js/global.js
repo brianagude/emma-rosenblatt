@@ -163,14 +163,6 @@ function dropdownMenu() {
     }
   );
 
-  // $("li").hover(
-  //   function () {
-  //     $(this).append($("<span> ***</span>"));
-  //   }, function () {
-  //     $(this).find("span").last().remove();
-  //   }
-  // );
-
   $(document).on("click", function (event) {
     var $trigger = $(".dropdown-menu");
     if ($trigger !== event.target && !$trigger.has(event.target).length) {
