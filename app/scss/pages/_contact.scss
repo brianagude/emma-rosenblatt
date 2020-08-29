@@ -26,7 +26,12 @@
 // styling ------------------------------------------
 
   .features-section {
-    .container { min-height: 0; }
+    margin-top: 80px;
+    .container { 
+      min-height: 0; 
+      max-width: 600px;
+      
+    }
   }
 
   .content {
