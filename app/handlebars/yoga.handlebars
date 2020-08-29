@@ -1,67 +1,13 @@
 <!DOCTYPE html>
 
 <head>
-  <title>A Rose in Bloom</title>
-  
-  <!-- default meta tags -->
-  <meta charset="UTF-8">
-  <meta name="description" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor">
-  <meta name="keywords" content="photographer, yoga, los angeles, la, portraits, lifestyle, occasions">
-  <meta name="author" content="briana gude">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- twitter meta tags -->
-  <meta name="twitter:card" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor" />
-  <meta property="og:url" content="https://emmarosenblatt.com.com/" />
-  <meta property="og:title" content="A Rose in Bloom" />
-  <meta property="og:description" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor" />
-  <meta property="og:image" content="./img/rose.png" />
-  
-  <!-- styles etc. -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png"></head>
+  {{> head}}
+</head>
 
 <body class='yoga-page'>
-  <div class='slide-in-menu closed'>
-    <div class='menu-header'>
-      <img src='./img/logo.png' class='menu-logo' alt='menu-logo' />
-      <button class='menu-close menu-btn'>
-        <img src='./img/menu-open.svg' alt='menu-btn' />
-      </button>
-    </div>
-  
-    <div class='menu-body'>
-      <div class='dropdown-menu'>
-        <a href="#" class='dropdown-btn'>Photography</a>
-        <ul class="dropdown-body">
-          <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
-          <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
-          <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
-          <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
-        </ul>
-      </div>
-      <a href="yoga">Yoga</a>
-      <a href="contact">Contact</a>
-    </div>
-  
-    <div class='menu-footer'>
-      <h3>Emma Rosenblatt</h3>
-      <p>Photographer & Yoga Instructor</p>
-    </div>
-  </div>  <nav class='top-menu'>
-    <a href="index">Home</a>
-    <div class='dropdown-menu'>
-      <a href="#" class='dropdown-btn'>Photography</a>
-      <ul class="dropdown-body">
-        <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
-        <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
-        <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
-        <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
-      </ul>
-    </div>
-    <a href="yoga">Yoga</a>
-    <a href="contact">Contact</a>
-  </nav>
+  {{> slide_in_menu}}
+  {{> top_menu}}
+
   <header>
     <div class='page-tracker'>
       <h4>A Rose in Bloom</h4>

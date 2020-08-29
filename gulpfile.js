@@ -6,6 +6,9 @@ var gulp = require("gulp"),
   autoprefixer = require("autoprefixer"),
   cssnano = require("cssnano"),
   sourcemaps = require("gulp-sourcemaps"),
+  handlebars = require('gulp-compile-handlebars'),
+  staticData = require('./data/static-data.json'),
+  rename = require('gulp-rename'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify-es').default,
   browserSync = require("browser-sync").create();
@@ -16,6 +19,24 @@ const files = {
   scss: 'app/scss/**',
   css: 'app/css/',
   js: 'app/js/**',
+}
+
+function modularize() {
+  const options = {
+    batch: ['./app/partials'],
+    helpers: {
+      capitals: function (str) {
+        return str.toUpperCase();
+      }
+    }
+  }
+
+  return gulp.src('app/handlebars/**.handlebars')
+    .pipe(handlebars(staticData, options))
+    .pipe(rename({
+      extname: ".html"
+    }))
+    .pipe(gulp.dest('app'));
 }
 
 function style() {
@@ -32,15 +53,6 @@ function style() {
     .pipe(gulp.dest(files.css))
     .pipe(browserSync.stream({ match: '**/*.css' }));
 }
-
-// function scripts() {
-//   return gulp
-//     .src(files.js)
-//     .pipe(concat('all.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('app/js')
-//     );
-// }
 
 function reload() {
   browserSync.reload();
@@ -60,6 +72,7 @@ function watch() {
   });
 
   gulp.watch(files.scss).on('change', style);
+  gulp.watch("data/*.json").on('change', modularize);
   gulp.watch("app/*").on('change', reload);
 }
 
@@ -68,7 +81,7 @@ exports.style = style;
 // exports.scripts = scripts;
 
 // var build = gulp.parallel(style, scripts, watch);
-var build = gulp.parallel(style, watch);
+var build = gulp.parallel(modularize, style, watch);
 
 gulp.task('build', build);
 gulp.task('default', build);

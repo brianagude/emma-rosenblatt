@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+  {{> head}}
+</head>
+
+<body class='contact-page'>
+  {{> slide_in_menu}}
+  {{> top_menu}}
+
+  <header>
+    <div class='page-tracker'>
+      <h4>{{pageTitle}}</h4>
+      <p>Contact</p>
+    </div>
+
+    <button class='menu-open menu-btn'>
+      <img src='./img/menu-closed.svg' alt='menu-btn' />
+    </button>
+  </header>
+
+  <section class="about-section page-section">
+    <div class='container'>
+      <div class='slides'>
+        <img src='./img/contact/emma-2.jpg' class='slide' />
+        <img src='./img/contact/emma-1.jpg' class='slide' />
+        <img src='./img/contact/emma-3.jpg' class='slide' />
+      </div>
+      <div class="content">
+        <div class='content-wrapper'>
+          <h4>Meet Emma</h4>
+          <p>{{bio_1}}</p>
+          <p>{{bio_2}}</p>
+          <a href="#contact-form">Let’s get in touch!</a>
+          <p>xx, Emma</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="features-section page-section small-section">
+    <div class="container">
+      <h3>{{featuresTitle}}</h3>
+      <ul>
+        {{#each contact.brands}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+
+  <section class='contact-section page-section'>
+    <div class='container'>
+      <div class='instagram-dt'>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+          src="//lightwidget.com/widgets/636672948c9a544d82c43b910fb2dfa7.html" scrolling="no" allowtransparency="true"
+          class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      </div>
+
+      <div class='instagram-mb'>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+          src="//lightwidget.com/widgets/636672948c9a544d82c43b910fb2dfa7.html" scrolling="no" allowtransparency="true"
+          class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      </div>
+
+      <div class='contact-form' id="contact-form">
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Name: *" required />
+          <input type="email" name="email" placeholder="Email: *" required />
+          <input type="text" name="subject" placeholder="Subject:" />
+          <textarea name="message" placeholder="Message: *" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class='social-links'>
+      <a href='mailto:{{instagram}}' class='footer-icon'>
+        <img src='./img/mail.svg' class='email ' alt='email' />
+      </a>
+      <a href='https://www.instagram.com/{{instagram}}/' class='footer-icon'>
+        <img src='./img/instagram.svg' class='instagram' alt='instagram' />
+      </a>
+    </div>
+  </footer>
+
+  {{> js}}
+</body>
+
+</html>
