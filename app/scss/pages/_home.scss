@@ -23,8 +23,10 @@
   footer { bottom: 0; }
 
   .rose-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 16px;
-    // min-height: calc(100vh - 176px);
     min-height: 100vh;
     display: flex;
     align-items: center;
