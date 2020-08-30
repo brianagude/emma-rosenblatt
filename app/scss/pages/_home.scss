@@ -22,15 +22,36 @@
   header { top: 0; }
   footer { bottom: 0; }
 
+  // body {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
   .rose-menu-wrapper {
-    position: sticky;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // transform: translateY(-50%);
     padding: 16px;
-    min-height: 100vh;
+    height: 100vmin;
+    width: 100%;
+    // margin: auto;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include bp(sm){
+      min-height: 100vh;
+      position: relative;
+
+      top: initial;
+      left: initial;
+      transform: none; 
+    }
 
     .link {
       &-hero {
