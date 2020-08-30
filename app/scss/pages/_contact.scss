@@ -25,12 +25,19 @@
 
 // styling ------------------------------------------
 
+  .about-section {
+    @include bp(md){
+      .content { margin-top: 80px; }
+    }
+  }
   .features-section {
-    margin-top: 80px;
     .container { 
       min-height: 0; 
       max-width: 600px;
-      
+    }
+
+    @include bp(md){
+      margin-top: 160px;
     }
   }
 
@@ -42,18 +49,27 @@
   .brands {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 16px; 
+    grid-gap: 24px; 
     align-items: center;
     justify-content: center;
+    max-width: 400px; 
+    margin: auto; 
+
+    img:last-of-type {
+      grid-column: 1/-1;
+      max-width: 200px;
+      margin: auto;
+    }
 
     @include bp(sm){
       grid-template-columns: 1fr 1fr 1fr;
+      max-width: 100%; 
 
-      img:last-of-type {
-        grid-column: 1/-1;
-        max-width: 160px;
-        margin: auto;
-      }
+      // img:last-of-type {
+      //   grid-column: 1/-1;
+      //   max-width: 200px;
+      //   margin: auto;
+      // }
     }
   }
 }
