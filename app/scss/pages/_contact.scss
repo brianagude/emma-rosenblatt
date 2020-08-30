@@ -1,6 +1,7 @@
 .contact-page {
+  //  default color settings -----------------------------
   background-color: $green-light; 
-
+  
   .slide-in-menu {
     background-color: $green-light; 
   }
@@ -12,67 +13,59 @@
   form {
     @include form($green);
 
-    @include bp(md){
+    @include bp(md) { 
       padding-top: 0; 
     }
   }
 
-  .content .container, 
-  .features {
-    @include border($green);
+  .dropdown-body {
+    background-color: $green-light;
+    border: $green;
   }
 
-  .about-section .container {
+// styling ------------------------------------------
 
-    a {
-      font-size: 20px; 
-      font-weight: 400;
-      // margin: 16px 0;
-      margin-top: 16px; 
-    }
-
-    p { margin-top: 16px; }
-
+  .about-section {
     @include bp(md){
-      // padding: 40px 80px; 
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      grid-gap: 32px; 
-
-      .content { margin-bottom: 0; }
-
-      // .features { grid-column: 1/-1; }
+      .content { margin-top: 80px; }
     }
   }
-
-  .features {
-    h4 {
-      text-align: center; 
+  .features-section {
+    .container { 
+      min-height: 0; 
+      max-width: 600px;
     }
 
     @include bp(md){
+      margin-top: 160px;
+    }
+  }
+
+  .content {
+    h4 { margin-bottom: 20px; }
+    a { margin-top: 4px; }
+  }
+
+  .brands {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px; 
+    align-items: center;
+    justify-content: center;
+    max-width: 400px; 
+    margin: auto; 
+
+    img:last-of-type {
       grid-column: 1/-1;
+      max-width: 200px;
+      margin: auto;
+    }
 
-      ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 24px; 
-        grid-row-gap: 8px; 
-        margin-top: 16px;
-      }
+    @include bp(sm){
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 100%; 
     }
   }
-
-  .slides,
-  .content { margin-bottom: 24px; }
-
-  // .instagram-dt {
-  //   display: none; 
-  //   @include bp
-  // }
-
-  
 }
 
 

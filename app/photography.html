@@ -12,16 +12,14 @@
 
   <!-- twitter meta tags -->
   <meta name="twitter:card" content="summary" />
-  <!-- <meta name="twitter:site" content="@brianagude" />
-    <meta name="twitter:creator" content="@brianagude" /> -->
-  <meta property="og:url" content="https://brianagude.com/" />
+  <meta property="og:url" content="https://emmarosenblatt.com/" />
   <meta property="og:title" content="A Rose in Bloom" />
   <meta property="og:description" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor" />
-  <!-- <meta property="og:image" content="./img/logo.svg" /> -->
+  <meta property="og:image" content="./img/rose.png" />
 
   <!-- styles etc. -->
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 </head>
 
 <body class='photography-page'>
@@ -35,16 +33,18 @@
     </div>
 
     <div class='menu-body'>
-      <a href="index.html">Home</a>
-      <a href="photography.html">Photography</a>
-      <ul class="dropdown-body">
-        <li><a href="photography.html">Occasions</a></li>
-        <li><a href="photography.html">Portraits</a></li>
-        <li><a href="photography.html">Movements</a></li>
-        <li><a href="photography.html">Lifestyle</a></li>
-      </ul>
-      <a href="yoga.html">Yoga</a>
-      <a href="contact.html">Contact</a>
+      <a href="index">Home</a>
+      <div class='dropdown-menu'>
+        <a href="#" class='dropdown-btn'>Photography</a>
+        <ul class="dropdown-body">
+          <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
+          <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
+          <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
+          <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
+        </ul>
+      </div>
+      <a href="yoga">Yoga</a>
+      <a href="contact">Contact</a>
     </div>
 
     <div class='menu-footer'>
@@ -54,24 +54,26 @@
   </div>
 
   <nav class='top-menu'>
-    <a href="index.html">Home</a>
-    <a href="photography.html" class='current'>Photography</a>
-    <!-- <ul class="dropdown-body">
-      <li><a href="photography.html">Occasions</a></li>
-      <li><a href="photography.html">Portraits</a></li>
-      <li><a href="photography.html">Movements</a></li>
-      <li><a href="photography.html">Lifestyle</a></li>
-    </ul> -->
-    <a href="yoga.html">Yoga</a>
-    <a href="contact.html" >Contact</a>
+    <a href="index">Home</a>
+    <div class='dropdown-menu'>
+      <a href="#" class='dropdown-btn current'>Photography</a>
+      <ul class="dropdown-body">
+        <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
+        <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
+        <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
+        <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
+      </ul>
+    </div>
+    <a href="yoga">Yoga</a>
+    <a href="contact">Contact</a>
   </nav>
-
+  
   <header>
     <div class='page-tracker'>
       <h4>A Rose in Bloom</h4>
-      <p>Photography</p>
+      <p class='photo-category'>Photography</p>
     </div>
-
+  
     <button class='menu-open menu-btn'>
       <img src='./img/menu-closed.svg' alt='menu-btn' />
     </button>
@@ -79,17 +81,30 @@
 
   <section class='photography-section page-section'>
     <div class='container'>
-      <img src='./img/photography/lifestyle-hot8-1.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-2.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-3.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-4.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-5.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-6.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-7.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-8.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-9.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-10.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
-      <img src='./img/photography/lifestyle-hot8-11.jpg' class='photography-image ' alt='emma-rosenblatt-photography' />
+      <img src='./img/photography/lifestyle-hot8-2.jpg' class='photography-image vert' data-page="occasions" />
+      <img src='./img/photography/lifestyle-hot8-1.jpg' class='photography-image '      data-page="occasions" />
+      
+      <img src='./img/photography/lifestyle-hot8-3.jpg' class='photography-image vert'  data-page="movement" />
+      <img src='./img/photography/lifestyle-hot8-4.jpg' class='photography-image vert'  data-page="movement" />
+      <img src='./img/photography/lifestyle-hot8-5.jpg' class='photography-image vert'  data-page="lifestyle" />
+      <img src='./img/photography/lifestyle-hot8-6.jpg' class='photography-image '      data-page="lifestyle" />
+      <img src='./img/photography/lifestyle-hot8-7.jpg' class='photography-image vert'  data-page="portraits" />
+      <img src='./img/photography/lifestyle-hot8-8.jpg' class='photography-image '      data-page="portraits" />
+      <img src='./img/photography/lifestyle-hot8-9.jpg' class='photography-image vert'  data-page="movement" />
+      <img src='./img/photography/lifestyle-hot8-10.jpg' class='photography-image vert' data-page="lifestyle" />
+      <img src='./img/photography/lifestyle-hot8-11.jpg' class='photography-image '     data-page="portraits" />
+      <img src='./img/photography/lifestyle-hot8-2.jpg' class='photography-image vert' data-page="occasions" />
+      <img src='./img/photography/lifestyle-hot8-1.jpg' class='photography-image '      data-page="occasions" />
+      
+      <img src='./img/photography/lifestyle-hot8-3.jpg' class='photography-image vert'  data-page="movement" />
+      <img src='./img/photography/lifestyle-hot8-4.jpg' class='photography-image vert'  data-page="movement" />
+      <img src='./img/photography/lifestyle-hot8-5.jpg' class='photography-image vert'  data-page="lifestyle" />
+      <img src='./img/photography/lifestyle-hot8-6.jpg' class='photography-image '      data-page="lifestyle" />
+      <img src='./img/photography/lifestyle-hot8-7.jpg' class='photography-image vert'  data-page="portraits" />
+      <img src='./img/photography/lifestyle-hot8-8.jpg' class='photography-image '      data-page="portraits" />
+      <img src='./img/photography/lifestyle-hot8-9.jpg' class='photography-image vert'  data-page="movement" />
+      <img src='./img/photography/lifestyle-hot8-10.jpg' class='photography-image vert' data-page="lifestyle" />
+      <img src='./img/photography/lifestyle-hot8-11.jpg' class='photography-image '     data-page="portraits" />
     </div>
   </section>
   <footer>
@@ -97,7 +112,7 @@
       <a href='mailto:emma.rosenblatt@gmail.com' class='footer-icon'>
         <img src='./img/mail.svg' class='email ' alt='email' />
       </a>
-      <a href='instagram.com' class='footer-icon'>
+      <a href='https://www.instagram.com/a.roseinbloom/' class='footer-icon'>
         <img src='./img/instagram.svg' class='instagram' alt='instagram' />
       </a>
     </div>

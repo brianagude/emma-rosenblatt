@@ -1,4 +1,5 @@
 .homepage {
+  // default color settings ---------------------------------
   background-color: $yellow-light; 
 
   .slide-in-menu {
@@ -9,23 +10,99 @@
     li { background-color: $yellow; }
   }
 
+  // styling -----------------------------
+
+  header,
+  footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+
+  header { top: 0; }
+  footer { bottom: 0; }
+
   .rose-menu-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 16px;
-    min-height: calc(100vh - 152px);
+    height: 100vmin;
+    width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-
-    a { display: none; }
-
-    .menu {
-      max-width: 620px; 
-    }
+    pointer-events: none;
 
     @include bp(sm){
-      a { display: inline-block; }
-      min-height: calc(100vh - 168); //why is this being overwritten
+      min-height: 100vh;
+      position: initial;
+
+      top: initial;
+      left: initial;
+      transform: none; 
+    }
+
+    @include bp(md){
+      pointer-events: all;
+    }
+
+    .link {
+      &-hero {
+        position: absolute;
+      }
+
+      &-contact {
+        top: 385px;
+        right: 96px;
+      }
+
+      &-yoga {
+        top: 238px;
+        right: 70px;
+      }
+
+      &-lifestyle {
+        top: 211px;
+        left: 20px;
+      }
+
+      &-movement {
+        top: 300px;
+        right: 182px;
+        transform: rotate(-2deg);
+      }
+
+      &-occasions {
+        top: 415px;
+        left: 135px;
+      }
+
+      &-portraits {
+        top: 21px;
+        left: 176px;
+        width: 140px;
+      }
+    }
+  
+    .menu {
+      max-width: 600px; 
+      position: relative;
+
+      @include bp(md){
+        max-width: 640px; 
+      }
+    }
+
+    a { 
+      display: none; 
+      transition: opacity 0.2s;
+    }
+
+    @include bp(md){
+      a { display: block; }
     }
   }
-  
 }

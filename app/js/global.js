@@ -1,6 +1,15 @@
 $(document).ready(function () {
+  slideMenu()
+  reviewsCarousel()
+  imgSlides()
+  photographyParams()
+  dropdownMenu()
+  linkHover()
+  smoothScroll()
+});
 
-  // slide in menu
+// slide in menu ------------------------------------------------------------------------------------------------------
+function slideMenu() {
   const menuOpen = $('.menu-open');
   const menuClose = $('.menu-close');
   const menu = $('.slide-in-menu');
@@ -12,13 +21,11 @@ $(document).ready(function () {
   $(menuClose).on('click', function () {
     $(menu).addClass('closed');
   })
-});
+}
 
-$(document).ready(function () {
-
+// reviews carousel ------------------------------------------------------------------------------------------------------
+function reviewsCarousel() {
   if ($('.reviews-wrapper').length) {
-    console.log('yes')
-
     $('.reviews-wrapper').slick({
       dots: true,
       arrows: false,
@@ -28,39 +35,41 @@ $(document).ready(function () {
       slidesToScroll: 1,
       mobileFirst: true,
       adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 8000,
 
       responsive: [
         {
           breakpoint: 1023,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
           }
         },
         {
           breakpoint: 767,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
           }
         }
       ]
     });
   }
-});
+}
 
+// image slides ------------------------------------------------------------------------------------------------------
 
-
-
-$(document).ready(function () {
+function imgSlides() {
   if ($('.slides').length) {
-    // pick all of the images and layer them based on the z-index
 
+    // pick all of the images and layer them based on the z-index
     const slideArea = document.querySelector("div.slides")
     const images = slideArea.querySelectorAll("img")
 
     // keep track of 1. which slide are we on 2. z-index
-
     let currentSlide = 0
     let z = 1
 
@@ -84,20 +93,113 @@ $(document).ready(function () {
       images[currentSlide].style.animation = "fade 0.5s"
     })
 
-    slideArea.addEventListener("mouseover", function () {
+    function smallScreens() {
+      images.forEach(image => {
+        const x = 5 * (Math.floor(Math.random() * 5))
+        const y = 5 * (Math.floor(Math.random() * 5))
+
+        image.style.transform = `translate(${x}px, ${y}px)`
+      })
+    }
+
+    function largeScreens() {
       images.forEach(image => {
         const x = 25 * (Math.floor(Math.random() * 5)) - 50
         const y = 25 * (Math.floor(Math.random() * 5)) - 50
 
         image.style.transform = `translate(${x}px, ${y}px)`
       })
-    })
+    }
 
-    // when I move my mouse away, put the images back
-    slideArea.addEventListener(`mouseout`, function () {
-      images.forEach(image => {
-        image.style.transform = ``
-      })
-    })
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var windowsize = $window.width();
+
+    function checkWidth() {
+      if (windowsize < 1024) {
+        smallScreens()
+        slideArea.addEventListener("mouseover", smallScreens)
+      } else {
+        largeScreens()
+        slideArea.addEventListener("mouseover", largeScreens)
+      }
+    }
+
+    // Execute on load
+    checkWidth();
+
+    // Bind event listener
+    $(window).resize(checkWidth);
   }
-});
+}
+
+// photography page content swap --------------------------------------------------------------------------------------------
+function photographyParams() {
+  url = new URL(window.location.href);
+
+  if (url.searchParams.get('page')) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageParam = urlParams.get('page');
+    const image = $('.photography-section img')
+
+    $(image).hide().filter("[data-page=" + pageParam + "]").show();
+    $('.photo-category').html(pageParam);
+  }
+}
+
+// dropdown menu --------------------------------------------------------------------------------------------
+function dropdownMenu() {
+  $(".dropdown-menu").click(function () {
+    $(this).find(".dropdown-body").slideToggle("fast");
+    $(this).toggleClass('open');
+  });
+
+  $(".dropdown-menu").hover(
+    function () {
+      $(this).find(".dropdown-body").slideToggle("fast");
+      $(this).toggleClass('open');
+    },
+    function () {
+      $(this).find(".dropdown-body").slideToggle("fast");
+      $(this).toggleClass('open');
+    }
+  );
+
+  $(document).on("click", function (event) {
+    var $trigger = $(".dropdown-menu");
+    if ($trigger !== event.target && !$trigger.has(event.target).length) {
+      $(".dropdown-body").slideUp("fast");
+    }
+  });
+}
+
+// rose menu link hover --------------------------------------------------------------------------------------------
+function linkHover() {
+  if ($('.rose-menu-wrapper').length) {
+    $(".rose-menu-wrapper a").hover(function () {
+      $(".rose-menu-wrapper a").animate({ 'opacity': '0.3' }, 50);
+      $(this).animate({ 'opacity': '1' }, 50);
+    },
+      function () {
+        $('.rose-menu-wrapper a').animate({ 'opacity': '1' }, 50);
+      });
+  }
+}
+
+// smooth scrolling -------------------------------------------------------------------------------------------------
+function smoothScroll() {
+  $("a").on('click', function (event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+
+        window.location.hash = hash;
+      });
+    }
+  });
+}

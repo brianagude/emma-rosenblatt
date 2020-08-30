@@ -1,47 +1,58 @@
 .photography-page {
+  // default color settings --------------------
   background-color: $gray-light;
+
    .slide-in-menu {
     background-color: $gray-light; 
   }
 
   .menu-body {
-    li { background-color: $gray; }
+    li { background-color: transparentize($gray, 0.5); }
   }
 
+  .dropdown-body {
+    background-color: $gray-light;
+    border: $gray;
+  }
+
+  // styling ---------------------------------------------
+
   .photography-section {
-    // .container {
-    //   @include bp(sm){
-    //     display: grid;
-    //     grid-template-columns; 1fr
-    //   }
-    // }
+    .container { 
+      min-height: 0; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       transition: box-shadow 0.5s;
       max-height: 90vh;
+      
       &:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+      &:last-of-type { margin-bottom: 0; }
     }
 
     img + img {
-      margin-top: 24px;
+      margin-bottom: 24px;
     }
 
-    @include bp(sm){
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 24px;
-        grid-row-gap: 36px;
-        align-items: center;
-        justify-content: center;
+    @include bp(sm) {
+      img + img {
+        margin-bottom: 32px;
       }
-
-      img + img { margin-top: 0; }
     }
 
     @include bp(md){
       .container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: $base-unit * 1.5;
+        align-items: flex-start;
       }
+
+      .vert { grid-row: auto /span 2; }
+      img + img { margin-bottom: 0; }
     }
   }
 }

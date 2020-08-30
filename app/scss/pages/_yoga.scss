@@ -1,4 +1,5 @@
 .yoga-page {
+  // default cfolor settings -----------------------
   background-color: $orange-light; 
 
   .slide-in-menu {
@@ -17,54 +18,108 @@
     }
   }
 
-  .slides {
-    margin-top: 80px;
+  .dropdown-body {
+    background-color: $orange-light;
+    border: $orange;
   }
 
-  .content .container, 
-  .review {
-    @include border($orange);
-  }
+// styling ---------------------------------------------
+  .about-section {
 
-  .review {
-    margin: 0 24px; 
-  }
+    .description {
+      border-bottom: 1px solid $black;
+      margin-bottom: $base-unit;
+      margin-top: 24px; 
+      padding-bottom: 16px; 
 
-  .about-section .container {
-
-    a {
-      font-size: 20px; 
-      font-weight: 400;
-      // margin: 16px 0;
-      margin-top: 16px; 
     }
 
-    p { margin-top: 16px; }
-
-    h5 {
-      // font-style: italic;
-      line-height: 1.33;
+    .classes h5 {
+      font-weight: 500;
     }
 
-    .offerings {
-      margin-top: 20px;
+    @include bp(sm){
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+      }
     }
 
     @include bp(md){
-      // padding: 40px 80px; 
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 32px; 
-      align-items: center;
-
-      .content { margin-bottom: 0; }
-
-      // .features { grid-column: 1/-1; }
+      .container {
+        grid-gap: $base-unit * 6; 
+      }
     }
   }
 
-  form {
-    max-width: 800px;
-    margin: auto;
+  .reviews-section { 
+    .container {
+      min-height: 0; 
+    }
+  }
+
+  .review {
+    border: solid 2px $orange;
+    border-radius: 8px; 
+    margin: 0 8px;
+
+    &-text {
+      border-bottom: 2px solid $orange;
+      padding-bottom: 16px;
+      padding: 16px;
+    }
+
+    &-attribution {
+      display: inline-block;
+      font-size: 12px;
+      padding: 16px;
+
+      span {
+        display: block;
+        font-size: 10px; 
+      }
+    }
+
+    @include bp(md){
+      margin: 0 16px; 
+      height: 440px;
+      display: flex;
+      flex-direction: column;
+
+      &-text { flex: 1; }
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px; 
+    margin-left: -40px;
+
+    button {
+      position: relative; 
+      color: transparent;
+      margin: 0 8px;
+
+      &:before {
+        content: '';
+        background-color: transparent;
+        border: $orange 2px solid;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      &:hover:before {
+        background-color: $orange;
+      }
+    }
+
+    .slick-active button:before {
+      background-color: $orange;
+    }
   }
 }

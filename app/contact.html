@@ -11,17 +11,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- twitter meta tags -->
-  <meta name="twitter:card" content="summary" />
-  <!-- <meta name="twitter:site" content="@brianagude" />
-    <meta name="twitter:creator" content="@brianagude" /> -->
-  <meta property="og:url" content="https://brianagude.com/" />
+  <meta name="twitter:card" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor" />
+  <meta property="og:url" content="https://emmarosenblatt.com.com/" />
   <meta property="og:title" content="A Rose in Bloom" />
   <meta property="og:description" content="Emma Rosenblatt - LA-based Photographer & Yoga Instructor" />
-  <!-- <meta property="og:image" content="./img/logo.svg" /> -->
+  <meta property="og:image" content="./img/rose.png" />
 
   <!-- styles etc. -->
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 </head>
 
 <body class='contact-page'>
@@ -35,16 +33,18 @@
     </div>
 
     <div class='menu-body'>
-      <a href="index.html">Home</a>
-      <a href="photography.html">Photography</a>
-      <ul class="dropdown-body">
-        <li><a href="photography.html">Occasions</a></li>
-        <li><a href="photography.html">Portraits</a></li>
-        <li><a href="photography.html">Movements</a></li>
-        <li><a href="photography.html">Lifestyle</a></li>
-      </ul>
-      <a href="yoga.html">Yoga</a>
-      <a href="contact.html">Contact</a>
+      <a href="index">Home</a>
+      <div class='dropdown-menu'>
+        <a href="#" class='dropdown-btn'>Photography</a>
+        <ul class="dropdown-body">
+          <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
+          <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
+          <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
+          <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
+        </ul>
+      </div>
+      <a href="yoga">Yoga</a>
+      <a href="contact">Contact</a>
     </div>
 
     <div class='menu-footer'>
@@ -54,16 +54,18 @@
   </div>
 
   <nav class='top-menu'>
-    <a href="index.html">Home</a>
-    <a href="photography.html">Photography</a>
-    <!-- <ul class="dropdown-body">
-      <li><a href="photography.html">Occasions</a></li>
-      <li><a href="photography.html">Portraits</a></li>
-      <li><a href="photography.html">Movements</a></li>
-      <li><a href="photography.html">Lifestyle</a></li>
-    </ul> -->
-    <a href="yoga.html">Yoga</a>
-    <a href="contact.html" class='current'>Contact</a>
+    <a href="index">Home</a>
+    <div class='dropdown-menu'>
+      <a href="#" class='dropdown-btn'>Photography</a>
+      <ul class="dropdown-body">
+        <li><a href="photography?page=portraits" class='link-portraits'>Portraits</a></li>
+        <li><a href="photography?page=movement" class='link-movement'>Movement</a></li>
+        <li><a href="photography?page=occasions" class='link-occasions'>Occasions</a></li>
+        <li><a href="photography?page=lifestyle" class='link-lifestyle'>Lifestyle</a></li>
+      </ul>
+    </div>
+    <a href="yoga">Yoga</a>
+    <a href="contact" class='current'>Contact</a>
   </nav>
 
   <header>
@@ -86,12 +88,13 @@
       </div>
       <div class="content">
         <div class='content-wrapper'>
-          <h3>Meet Emma</h3>
+          <h4>Meet Emma</h4>
           <p>I started ‘A Rose in Bloom’ with the hope of creating space
             for one to bloom and discover their full potential. To me,
             photography and yoga flow seamlessly together. Both create
             an internal & external balance of confidence and innate joy.
-            <br><br>
+            <p />
+          <p>
             Whether it be in asana (yoga pose), discovering newfound
             space and movement in the body or through a photo
             capturing ones true essence — my intention is to create a
@@ -103,58 +106,46 @@
         </div>
       </div>
 
-      <div class='features'>
-        <h4>Featured In</h4>
-        <ul>
-          <li>LA Confidential Magazine</li>
-          <li>Jacky B Skincare</li>
+    </div>
+  </section>
 
-          <li>Radar Online</li>
-          <li>Hot 8 Yoga</li>
-
-          <li>Powerplant Superfood Kitchen</li>
-          <li>Angeleno Magazine</li>
-          <li>Lit Yoga Barre</li>
-          <li>Voyage LA</li>
-
-        </ul>
+  <section class="features-section page-section small-section">
+    <div class="container">
+      <h3>Featured In</h3>
+      <div class='brands'>
+        <img src='./img/contact/brand-1.png' class='brand' />
+        <img src='./img/contact/brand-5.png' class='brand' />
+        <img src='./img/contact/brand-6.png' class='brand' />
+        <img src='./img/contact/brand-3.png' class='brand' />
+        <img src='./img/contact/brand-7.png' class='brand' />
+        <img src='./img/contact/brand-2.png' class='brand' />
+        <img src='./img/contact/brand-4.png' class='brand' />
       </div>
     </div>
+
   </section>
 
   <section class='contact-section page-section'>
     <div class='container'>
       <div class='instagram-dt'>
-        <h4>@a.roseinbloom</h4>
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-          src="//lightwidget.com/widgets/636672948c9a544d82c43b910fb2dfa7.html" scrolling="no" allowtransparency="true"
-          class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+          <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+            src="https://cdn.lightwidget.com/widgets/636672948c9a544d82c43b910fb2dfa7.html" scrolling="no"
+            allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
       </div>
 
       <div class='instagram-mb'>
-        <h4>@a.roseinbloom</h4>
         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-          src="//lightwidget.com/widgets/28fe4a8cd6875019bc3657183830ee89.html" scrolling="no" allowtransparency="true"
-          class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+          src="https://cdn.lightwidget.com/widgets/28fe4a8cd6875019bc3657183830ee89.html" scrolling="no"
+          allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
       </div>
 
       <div class='contact-form' id="contact-form">
         <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Name: * <input type="text" name="name" required /></label>
-          </p>
-          <p>
-            <label>Email: * <input type="email" name="email" required /></label>
-          </p>
-          <p>
-            <label>Subject: <input type="text" name="subject" /></label>
-          </p>
-          <p>
-            <label>Message: * <textarea name="message" required></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          <input type="text" name="name" placeholder="Name: *" required />
+          <input type="email" name="email" placeholder="Email: *" required />
+          <input type="text" name="subject" placeholder="Subject:" />
+          <textarea name="message" placeholder="Message: *" required></textarea>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
@@ -165,7 +156,7 @@
       <a href='mailto:emma.rosenblatt@gmail.com' class='footer-icon'>
         <img src='./img/mail.svg' class='email ' alt='email' />
       </a>
-      <a href='instagram.com' class='footer-icon'>
+      <a href='https://www.instagram.com/a.roseinbloom/' class='footer-icon'>
         <img src='./img/instagram.svg' class='instagram' alt='instagram' />
       </a>
     </div>
