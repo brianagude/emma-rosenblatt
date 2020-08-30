@@ -76,6 +76,7 @@
     border: solid 2px $orange;
     // padding: 16px; 
     border-radius: 8px; 
+    margin: 0 8px;
 
     &-text {
       border-bottom: 2px solid $orange;
@@ -92,10 +93,6 @@
         display: block;
         font-size: 10px; 
       }
-    }
-
-    @include bp(sm){
-      margin: 0 8px;
     }
 
     @include bp(md){
