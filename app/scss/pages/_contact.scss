@@ -55,12 +55,6 @@
     max-width: 400px; 
     margin: auto; 
 
-    img:last-of-type {
-      grid-column: 1/-1;
-      max-width: 200px;
-      margin: auto;
-    }
-
     @include bp(sm){
       grid-template-columns: 1fr 1fr 1fr;
       max-width: 100%; 
