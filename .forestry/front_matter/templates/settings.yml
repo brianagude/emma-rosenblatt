@@ -1,0 +1,48 @@
+---
+label: Settings
+hide_body: true
+fields:
+- type: text
+  name: baseURL
+  label: baseURL
+- type: text
+  name: languageCode
+  label: languageCode
+- type: text
+  name: url
+  label: url
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: params
+  label: params
+  fields:
+  - type: text
+    name: designer
+    label: designer
+  - type: file
+    name: logo
+    label: logo
+  - type: list
+    name: keywords
+    label: keywords
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: instagram
+    label: instagram
+  - type: text
+    name: email
+    label: email
+  - type: field_group
+    name: author
+    label: author
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: title
+      label: title
