@@ -1,4 +1,5 @@
 ---
-title: ""
-id: "home"
+title: Home
+id: home
+
 ---
