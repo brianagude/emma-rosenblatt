@@ -9,6 +9,7 @@ fields:
 - type: text
   name: languageCode
   label: languageCode
+  hidden: true
 - type: text
   name: url
   label: url
