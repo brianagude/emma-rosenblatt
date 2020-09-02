@@ -5,22 +5,22 @@ type: "contact"
 photos: ["/img/contact/emma-2.jpg", "/img/contact/emma-1.jpg", "/img/contact/emma-3.jpg"]
 featured_on: "Featured In"
 brands:
-  - brand: Lit
-    source: /img/contact/brand-1.png
-  - brand: Radar Online
-    source: /img/contact/brand-5.png
-  - brand: Jacky B Skin Care
-    source: /img/contact/brand-6.png
-  - brand: Hot Yoga
-    source: /img/contact/brand-3.png
-  - brand: LA Confidential
-    source: /img/contact/brand-7.png
-  - brand: VoyageLA
-    source: /img/contact/brand-2.png
-  - brand: Powerplant
-    source: /img/contact/brand-4.png
-  - brand: Angeleno
-    source: /img/contact/brand-8.png
+  - brand: "Lit"
+    source: "/img/contact/brand-1.png"
+  - brand: "Radar Online"
+    source: "/img/contact/brand-5.png"
+  - brand: "Jacky B Skin Care"
+    source: "/img/contact/brand-6.png"
+  - brand: "Hot Yoga"
+    source: "/img/contact/brand-3.png"
+  - brand: "LA Confidential"
+    source: "/img/contact/brand-7.png"
+  - brand: "VoyageLA"
+    source: "/img/contact/brand-2.png"
+  - brand: "Powerplant"
+    source: "/img/contact/brand-4.png"
+  - brand: "Angeleno"
+    source: "/img/contact/brand-8.png"
 ---
 
 #### Meet Emma
