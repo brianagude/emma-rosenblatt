@@ -2,19 +2,13 @@
 <section class="about-section page-section">
   <div class='container'>
     <div class='slides'>
-      <img src='/img/contact/emma-2.jpg' class='slide' />
-      <img src='/img/contact/emma-1.jpg' class='slide' />
-      <img src='/img/contact/emma-3.jpg' class='slide' />
+      {{ range .Params.photos }}
+      <img src='{{ . }}' class='slide' />
+      {{ end }}
     </div>
     <div class="content">
       <div class='content-wrapper'>
-        <h4>Meet Emma</h4>
-        <p>I started ‘A Rose in Bloom’ with the hope of creating space for one to bloom and discover their full potential. To me, photography and yoga flow seamlessly together. Both create an internal & external balance of confidence and innate joy.
-        </p>
-        <p>Whether it be in asana (yoga pose), discovering newfound space and movement in the body or through a photo capturing ones true essence — my intention is to create comfortable environment to help you meet your needs and achieve that ‘aha’ moment.
-        </p>
-        <a href="#contact-form">Let’s get in touch!</a>
-        <p>xx, Emma</p>
+        {{ .Content }}
       </div>
     </div>
   </div>
@@ -22,16 +16,11 @@
 
 <section class="features-section page-section small-section">
   <div class="container">
-    <h3>Featured In</h3>
+    <h3>{{ .Params.featured_on }}</h3>
     <div class='brands'>
-      <img src='/img/contact/brand-1.png' class='brand' />
-      <img src='/img/contact/brand-5.png' class='brand' />
-      <img src='/img/contact/brand-6.png' class='brand' />
-      <img src='/img/contact/brand-3.png' class='brand' />
-      <img src='/img/contact/brand-7.png' class='brand' />
-      <img src='/img/contact/brand-2.png' class='brand' />
-      <img src='/img/contact/brand-4.png' class='brand' />
-      <img src='/img/contact/brand-8.png' class='brand' />
+    {{ range .Params.brands }}
+      <img src='{{ .source }}' class='brand' />
+    {{ end }}
     </div>
   </div>
 </section>

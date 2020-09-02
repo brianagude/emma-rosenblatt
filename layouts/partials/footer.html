@@ -6,10 +6,10 @@
   <p>{{ $author.title }}</p>
 {{ else }}
   <div class='social-links'>
-    <a href='mailto:emma.rosenblatt@gmail.com' class='footer-icon'>
+    <a href='mailto:{{ $params.email }}' class='footer-icon'>
       <img src='/img/mail{{ if eq .Type "yoga" }}-orange{{ end }}.svg' class='email ' alt='email' />
     </a>
-    <a href='https://www.instagram.com/a.roseinbloom/' class='footer-icon'>
+    <a href='{{ if eq .Type "yoga" }}{{ .Params.instagram_link }}{{ else }}{{ $params.instagram }}{{ end }}' class='footer-icon'>
       <img src='/img/instagram{{ if eq .Type "yoga" }}-orange{{ end }}.svg' class='instagram' alt='instagram' />
     </a>
   </div>

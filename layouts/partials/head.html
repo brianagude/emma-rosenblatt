@@ -1,5 +1,5 @@
 {{- $params := .Site.Params }}
-<title>{{ .Site.Title }}</title>
+<title>{{ if and (ne .IsHome true) .Page .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 <!-- default meta tags -->
 <meta charset="UTF-8">
 <meta name="description" content="{{ $params.description }}">
@@ -10,7 +10,7 @@
 <!-- twitter meta tags -->
 <meta name="twitter:card"
   content="{{ $params.description }}" />
-<meta property="og:url" content="https://emmarosenblatt.com.com/" />
+<meta property="og:url" content="https://emmarosenblatt.com/" />
 <meta property="og:title" content="A Rose in Bloom" />
 <meta property="og:description" content="{{ $params.description }}" />
 <meta property="og:image" content="./img/rose.png" />
