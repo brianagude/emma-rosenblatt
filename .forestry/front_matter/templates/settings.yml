@@ -19,7 +19,6 @@ fields:
   label: title
 - type: field_group
   name: params
-  label: params
   fields:
   - type: text
     name: designer
@@ -49,3 +48,5 @@ fields:
     - type: text
       name: title
       label: title
+  label: Site Settings
+  description: 'e.g site owner, logo '
