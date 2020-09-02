@@ -4,21 +4,20 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: config.toml
-  label: General
-  match: "**/*"
 - type: heading
   label: DATA
 - type: document
   path: data/classes.yaml
   label: Classes
 - type: document
-  path: data/navigation.yaml
-  label: Site Menu
+  path: config.toml
+  label: General
 - type: document
   path: data/reviews.yaml
   label: Reviews
+- type: document
+  path: data/navigation.yaml
+  label: Site Menu
 - type: heading
   label: PAGES
 - type: directory
