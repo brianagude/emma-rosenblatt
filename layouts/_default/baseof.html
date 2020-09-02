@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+  {{ partial "head" . }}
+</head>
+<body class="{{ .Params.id }}-page">
+  {{ partial "nav" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer" . }}
+  {{ partial "scripts" . }}
+</body>
+</html>

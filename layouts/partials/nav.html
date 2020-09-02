@@ -1,0 +1,33 @@
+<div class='slide-in-menu closed'>
+  <div class='menu-header'>
+    <img src='/img/logo.png' class='menu-logo' alt='menu-logo' />
+    <button class='menu-close menu-btn'>
+      <img src='/img/menu-open.svg' alt='menu-btn' />
+    </button>
+  </div>
+  <div class='menu-body'>
+    {{ partial "header" . }}
+  </div>
+  <div class='menu-footer'>
+    <h3>Emma Rosenblatt</h3>
+    <p>Photographer & Yoga Instructor</p>
+  </div>
+</div>
+{{ if ne .IsHome true }}
+<nav class='top-menu'>
+  {{ partial "header" . }}
+</nav>
+{{ end }}
+<header>
+  {{ if .IsHome }}
+  <img src="{{ .Site.Params.logo }}" class="header-logo" alt="header-logo">
+  {{ else }}
+  <div class='page-tracker'>
+    <h4>{{ .Site.Title }}</h4>
+    <p{{ if eq .Type "photography" }} class="photo-category"{{ end }}>{{ .Title }}</p>
+  </div>
+  {{ end }}
+  <button class='menu-open menu-btn'>
+    <img src='/img/menu-closed.svg' alt='menu-btn' />
+  </button>
+</header>

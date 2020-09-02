@@ -1,0 +1,20 @@
+{{- $nav := .Site.Data.navigation }}
+{{- $link := .RelPermalink }}
+{{- range $nav }}
+{{- $activeClass := false }}
+{{- if eq (replace $link "/" "") (replace .link "/" "") }}
+  {{- $activeClass = true }}
+{{- end }}
+{{ if .submenu }}
+<div class='dropdown-menu'>
+  <a href="{{ .link }}" class='dropdown-btn'>{{ .name }}</a>
+  <ul class="dropdown-body">
+  {{ range .submenu }}
+    <li><a href="{{ .link }}" class='{{ .class }}'>{{ .name }}</a></li>
+  {{ end }}
+  </ul>
+</div>
+{{ else }}
+<a href="{{ .link }}"{{ if $activeClass }} class="current"{{ end }}>{{ .name }}</a>
+{{ end }}
+{{ end }}
