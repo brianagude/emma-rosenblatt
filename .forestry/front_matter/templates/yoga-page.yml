@@ -1,0 +1,22 @@
+---
+label: Yoga Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: id
+  label: id
+- type: text
+  name: type
+  label: type
+- type: boolean
+  name: hasSlider
+  label: hasSlider
+- type: image_gallery
+  name: photos
+  label: photos
+- type: text
+  name: instagram-link
+  label: instagram-link
