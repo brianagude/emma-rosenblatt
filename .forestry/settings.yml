@@ -17,7 +17,7 @@ sections:
   label: Reviews
 - type: document
   path: data/navigation.yaml
-  label: Site Menu
+  label: Menu
 - type: heading
   label: PAGES
 - type: directory
