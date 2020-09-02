@@ -50,3 +50,5 @@ fields:
       label: title
   label: Site Settings
   description: 'e.g site owner, logo '
+pages:
+- config.toml
