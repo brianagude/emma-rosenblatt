@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/reviews.yaml
   label: Reviews
-  match: "**/*"
 - type: heading
   label: DATA
 - type: heading
