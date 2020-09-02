@@ -12,6 +12,7 @@ fields:
 - type: text
   name: type
   label: type
+  hidden: true
 - type: image_gallery
   name: photos
   label: photos
