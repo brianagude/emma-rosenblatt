@@ -1,0 +1,29 @@
+---
+label: Contact Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: id
+  label: id
+- type: text
+  name: type
+  label: type
+- type: image_gallery
+  name: photos
+  label: photos
+- type: text
+  name: featured_on
+  label: featured_on
+- type: field_group_list
+  name: brands
+  label: brands
+  fields:
+  - type: text
+    name: brand
+    label: brand
+  - type: file
+    name: source
+    label: source
