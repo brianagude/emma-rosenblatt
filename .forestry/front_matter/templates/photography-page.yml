@@ -1,0 +1,26 @@
+---
+label: Photography Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: id
+  label: id
+- type: text
+  name: type
+  label: type
+- type: field_group_list
+  name: photos
+  label: photos
+  fields:
+  - type: file
+    name: source
+    label: source
+  - type: text
+    name: class
+    label: class
+  - type: text
+    name: category
+    label: category
