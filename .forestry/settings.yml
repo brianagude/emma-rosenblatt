@@ -4,12 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: DATA
 - type: document
   path: data/classes.yaml
   label: Classes
-  match: "**/*"
-- type: heading
-  label: DATA
 - type: document
   path: data/navigation.yaml
   label: Site Menu
