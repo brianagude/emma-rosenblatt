@@ -10,14 +10,14 @@ sections:
   path: data/classes.yaml
   label: Classes
 - type: document
-  path: config.toml
-  label: Settings
-- type: document
   path: data/navigation.yaml
   label: Menu
 - type: document
   path: data/reviews.yaml
   label: Reviews
+- type: document
+  path: config.toml
+  label: Settings
 - type: heading
   label: PAGES
 - type: directory
