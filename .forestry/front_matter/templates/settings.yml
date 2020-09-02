@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: text
   name: baseURL
-  label: baseURL
+  label: Website URL
 - type: text
   name: languageCode
   label: languageCode
