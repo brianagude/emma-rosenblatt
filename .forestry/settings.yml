@@ -11,7 +11,7 @@ sections:
   label: Classes
 - type: document
   path: config.toml
-  label: General
+  label: Settings
 - type: document
   path: data/navigation.yaml
   label: Menu
