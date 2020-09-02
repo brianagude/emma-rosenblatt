@@ -1,11 +1,14 @@
-baseURL = "http://example.org/"
+baseURL = "https://emmarosenblatt.com"
 languageCode = "en-us"
+url = "https://emmarosenblatt.com"
 title = "A Rose in Bloom"
 [params]
   designer = "Briana Gude"
   logo = "/img/logo.png"
   keywords = ["photographer", "yoga", "los angeles", "LA", "portraits", "lifestyle", "occasions"]
   description = "Emma Rosenblatt - LA-based Photographer & Yoga Instructor"
+  instagram = "https://www.instagram.com/a.roseinbloom/"
+  email = "emma.rosenblatt@gmail.com"
   [params.author]
     name = "Emma Rosenblatt"
     title = "Photographer & Yoga Instructor"
