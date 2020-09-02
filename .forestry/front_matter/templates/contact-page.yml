@@ -27,3 +27,5 @@ fields:
   - type: file
     name: source
     label: source
+pages:
+- content/contact.md
