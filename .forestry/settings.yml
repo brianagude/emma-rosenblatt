@@ -5,8 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: data/navigation.yaml
+  label: Site Menu
+  match: "**/*"
+- type: document
   path: data/reviews.yaml
   label: Reviews
+  match: "**/*"
 - type: heading
   label: DATA
 - type: heading
