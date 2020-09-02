@@ -24,5 +24,7 @@ fields:
   - type: text
     name: category
     label: category
+  config:
+    labelField: category
 pages:
 - content/photography.md
