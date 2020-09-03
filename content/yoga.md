@@ -4,7 +4,6 @@ id: yoga
 type: yoga
 hasSlider: true
 photos:
-- "/img/movement-6.jpg"
 - "/img/yoga/emma-yoga-2.jpg"
 - "/img/yoga/emma-yoga-1.jpg"
 - "/img/yoga/emma-yoga-3.jpg"
