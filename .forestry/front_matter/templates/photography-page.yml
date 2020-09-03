@@ -19,11 +19,7 @@ fields:
   fields:
   - type: file
     name: source
-    label: source
-  - type: text
-    name: class
-    label: class
-    hidden: true
+    label: Source
   - name: category
     type: select
     default: []
@@ -39,7 +35,11 @@ fields:
         section: 
         file: 
         path: 
-    label: category
+    label: Category
+  - name: class
+    type: boolean
+    label: Vertical
+    description: Make a photo take 2 vertical rows / spaces
   config:
     labelField: category
 pages:
