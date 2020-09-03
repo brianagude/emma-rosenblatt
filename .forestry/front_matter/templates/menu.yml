@@ -12,3 +12,22 @@ fields:
   - type: text
     name: link
     label: link
+  - name: submenu
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: false
+      label: Name
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Sub Links
+    description: Are there submenu links under this menu link?
