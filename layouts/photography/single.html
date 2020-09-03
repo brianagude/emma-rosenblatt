@@ -2,7 +2,7 @@
 <section class='photography-section page-section'>
   <div class='container'>
     {{ range .Params.photos }}
-    <img src='{{ .source }}' class='photography-image{{ with .class }} {{ . }}{{ end }}' data-page="{{ .category }}" />
+    <img src='{{ .source }}' class='photography-image{{ with .class }} vert{{ end }}' data-page="{{ .category }}" />
     {{ end }}
   </div>
 </section>
