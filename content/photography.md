@@ -61,7 +61,7 @@ photos:
   category: occasions
   class: false
 - source: "/img/rose.png"
-  category: ''
+  category: occasions
   class: false
 
 ---
