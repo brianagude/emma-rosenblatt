@@ -1,21 +1,25 @@
-- name: "Home"
+---
+- name: Home
   link: "/"
-- name: "Photography"
+  submenu: []
+- name: Photography
   link: "#"
   submenu:
-    - name: "Portraits"
-      link: "/photography?page=portraits"
-      class: "link-portraits"
-    - name: "Movement"
-      link: "/photography?page=movement"
-      class: "link-movement"
-    - name: "Occasions"
-      link: "/photography?page=occasions"
-      class: "link-occasions"
-    - name: "Lifestyle"
-      link: "/photography?page=lifestyle"
-      class: "link-lifestyle"
-- name: "Yoga"
+  - name: Portraits
+    link: "/photography?page=portraits"
+    class: link-portraits
+  - name: Movement
+    link: "/photography?page=movement"
+    class: link-movement
+  - name: Occasions
+    link: "/photography?page=occasions"
+    class: link-occasions
+  - name: Lifestyle
+    link: "/photography?page=lifestyle"
+    class: link-lifestyle
+- name: Yoga
   link: "/yoga"
-- name: "Contact"
+  submenu: []
+- name: Contact
   link: "/contact"
+  submenu: []

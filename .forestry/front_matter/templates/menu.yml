@@ -31,3 +31,5 @@ fields:
       labelField: 
     label: Sub Links
     description: Are there submenu links under this menu link?
+pages:
+- data/navigation.yaml
