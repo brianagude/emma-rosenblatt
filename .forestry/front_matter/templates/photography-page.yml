@@ -27,9 +27,9 @@ fields:
       required: false
       options:
       - movement
-      - occassions
       - portraits
       - lifestyle
+      - occasions
       source:
         type: simple
         section: 
