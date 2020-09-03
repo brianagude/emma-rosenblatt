@@ -1,0 +1,14 @@
+---
+label: Menu
+hide_body: true
+fields:
+- type: field_group_list
+  name: Navigation
+  label: Navigation
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: link
+    label: link
