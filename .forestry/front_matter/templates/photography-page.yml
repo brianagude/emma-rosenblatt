@@ -24,8 +24,21 @@ fields:
     name: class
     label: class
     hidden: true
-  - type: text
-    name: category
+  - name: category
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - movement
+      - occassions
+      - portraits
+      - lifestyle
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
     label: category
   config:
     labelField: category
