@@ -15,9 +15,9 @@ fields:
   - type: text
     name: author
     label: author
-- name: role
-  type: text
-  config:
-    required: false
-  label: Role
-  description: What are they known for? Or their job/career position.
+  - name: role
+    type: text
+    config:
+      required: false
+    label: Role
+    description: What are they known for? Or their job/career position.
