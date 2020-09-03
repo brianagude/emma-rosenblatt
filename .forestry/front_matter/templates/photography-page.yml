@@ -23,6 +23,7 @@ fields:
   - type: text
     name: class
     label: class
+    hidden: true
   - type: text
     name: category
     label: category
