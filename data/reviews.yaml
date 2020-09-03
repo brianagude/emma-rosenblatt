@@ -1,46 +1,45 @@
-title: "People Are Saying"
+---
+title: People Are Saying
 reviews:
-  - review: "My private Yoga Session with Emma brought me back to center. It was the
-  workout my body needed with the safety my mind needed. She leads class
-  with such grace and intention, I felt as strong as I did at peace. I have now
-  had Emma come to my home to lead Yoga twice and each time gets better
-  than the last. I would highly recommend Emma for a private session. Safety
-  and Strength."
-    author: "Katie R."
-
-  - review: "Emma has been teaching yoga to my family and I privately now for a few
-  years. Not only is she incredibly good at what she does but she creates a
-  safe space for us to practice simply with her energy and words. Emma has
-  been my families go to for events, birthday parties, or even when we just
-  need to chill after a stressful time. More specifically Emma was extremely
-  Covid friendly these last few times we practiced yoga. She respects your
-  space, and still has a hands on approach to teaching but FROM A
-  DISTANCE."
-    author: "Jacklyn B"
-
-  - review: "Emma has always been a go-to instructor for our lululemon yoga events. She
-  is able to adjust her classes in the moment to fit the needs of whoever comes
-  to class. Her ability to make class inclusive and challenging for all levels
-  makes her a stand-out instructor (and I’ve used a LOT of yoga instructors for
-  store events over the last 3 years.) I frequently have class participants reach
-  out to thank me for the high quality class whenever Emma has taught. Truly
-  the best instructor I’ve had the pleasure to work with!"
-    author: "Tori S."
-    role: "lululemon assistant store manager & community lead"
-
-  - review: "Emma led a yoga class with six of my friends for my birthday at my house.
-  We practiced in the open air, with our mats 6-feet apart from each other, and
-  we all felt very safe. It was a nice work from home distraction, break from the
-  news, and overall felt really good to be able to practice yoga again. Her 60
-  minute flow was the perfect combination of challenging and feeling good on
-  the body. Emma was very specific in her moves, helpful with making sure our
-  posture was right, and just made everyone feel safe and calm. At the end of
-  the class we all felt stronger, flexible, and minds were more relaxed."
-    author: "Neeka B."
-
-  - review: "I was practicing yoga on and off for the last few years. I strongly believe that
-  yoga is a practice that connects the mind to the body and I struggled to find
-  a teacher that aligned with my values until I took Emma’s class. The way she
-  genuinely and intentionally intertwines the two leaves me beyond fulfilled
-  every time."
-    author: "Natalia A."
+- review: My private Yoga Session with Emma brought me back to center. It was the
+    workout my body needed with the safety my mind needed. She leads class with such
+    grace and intention, I felt as strong as I did at peace. I have now had Emma come
+    to my home to lead Yoga twice and each time gets better than the last. I would
+    highly recommend Emma for a private session. Safety and Strength.
+  author: Katie R.
+  role: ''
+- review: Emma has been teaching yoga to my family and I privately now for a few years.
+    Not only is she incredibly good at what she does but she creates a safe space
+    for us to practice simply with her energy and words. Emma has been my families
+    go to for events, birthday parties, or even when we just need to chill after a
+    stressful time. More specifically Emma was extremely Covid friendly these last
+    few times we practiced yoga. She respects your space, and still has a hands on
+    approach to teaching but FROM A DISTANCE.
+  author: Jacklyn B
+  role: ''
+- review: Emma has always been a go-to instructor for our lululemon yoga events. She
+    is able to adjust her classes in the moment to fit the needs of whoever comes
+    to class. Her ability to make class inclusive and challenging for all levels makes
+    her a stand-out instructor (and I’ve used a LOT of yoga instructors for store
+    events over the last 3 years.) I frequently have class participants reach out
+    to thank me for the high quality class whenever Emma has taught. Truly the best
+    instructor I’ve had the pleasure to work with!
+  author: Tori S.
+  role: lululemon assistant store manager & community lead
+- review: Emma led a yoga class with six of my friends for my birthday at my house.
+    We practiced in the open air, with our mats 6-feet apart from each other, and
+    we all felt very safe. It was a nice work from home distraction, break from the
+    news, and overall felt really good to be able to practice yoga again. Her 60 minute
+    flow was the perfect combination of challenging and feeling good on the body.
+    Emma was very specific in her moves, helpful with making sure our posture was
+    right, and just made everyone feel safe and calm. At the end of the class we all
+    felt stronger, flexible, and minds were more relaxed.
+  author: Neeka B.
+  role: ''
+- review: I was practicing yoga on and off for the last few years. I strongly believe
+    that yoga is a practice that connects the mind to the body and I struggled to
+    find a teacher that aligned with my values until I took Emma’s class. The way
+    she genuinely and intentionally intertwines the two leaves me beyond fulfilled
+    every time.
+  author: Natalia A.
+  role: ''

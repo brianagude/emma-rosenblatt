@@ -21,3 +21,5 @@ fields:
       required: false
     label: Role
     description: What are they known for? Or their job/career position.
+pages:
+- data/reviews.yaml
