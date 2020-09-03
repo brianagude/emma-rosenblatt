@@ -1,0 +1,17 @@
+---
+label: Reviews
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group_list
+  name: reviews
+  label: reviews
+  fields:
+  - type: textarea
+    name: review
+    label: review
+  - type: text
+    name: author
+    label: author
