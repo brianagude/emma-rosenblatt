@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/movement-9.jpg"
+  category: occasions
+  class: true
 - source: "/img/photography/lifestyle-3.jpg"
   class: true
   category: lifestyle
@@ -58,9 +61,6 @@ photos:
   category: occasions
   class: false
 - source: "/img/photography/occasions-5.jpg"
-  category: occasions
-  class: false
-- source: "/img/rose.png"
   category: occasions
   class: false
 
