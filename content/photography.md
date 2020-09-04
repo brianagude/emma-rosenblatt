@@ -3,9 +3,6 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/movement-9.jpg"
-  category: occasions
-  class: true
 - source: "/img/photography/lifestyle-3.jpg"
   class: true
   category: lifestyle
@@ -24,17 +21,20 @@ photos:
 - source: "/img/photography/portrait-2.jpg"
   category: portraits
   class: false
+- source: "/img/movement-9.jpg"
+  category: occasions
+  class: true
 - source: "/img/photography/portrait-3.jpg"
   category: portraits
+  class: false
+- source: "/img/photography/movement-1.jpg"
+  category: movement
   class: false
 - source: "/img/photography/portrait-4.jpg"
   category: portraits
   class: false
 - source: "/img/photography/portrait-5.jpg"
   category: portraits
-  class: false
-- source: "/img/photography/movement-1.jpg"
-  category: movement
   class: false
 - source: "/img/photography/movement-2.jpg"
   category: movement
