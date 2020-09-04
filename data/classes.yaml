@@ -1,11 +1,12 @@
-title: "Available Classes"
+---
+title: Available Classes
 classes:
-  - title: "1 on 1 Sessions"
-    details: "Create the type of class that YOU want. The time and space is all yours!"
-  - title: "Group Sessions (up to 8)"
-    details: "Move and breathe with family or friends."
-  - title: "Events/Workshops"
-    details: "Hosting an event? Offer a yoga + meditation session to set the tone."
-
-  - title: "Certifications"
-    details: "200hr ERYT in Power, Sculpt, Yin + meditation with the addition of yoga/barre classes stemming from my ballet background."
+- title: Group Sessions (up to 8)
+  details: Move and breathe with family or friends.
+- title: 1 on 1 Sessions
+  details: Create the type of class that YOU want. The time and space is all yours!
+- title: Events/Workshops
+  details: Hosting an event? Offer a yoga + meditation session to set the tone.
+- title: Certifications
+  details: 200hr ERYT in Power, Sculpt, Yin + meditation with the addition of yoga/barre
+    classes stemming from my ballet background.
