@@ -21,20 +21,17 @@ photos:
 - source: "/img/photography/portrait-2.jpg"
   category: portraits
   class: false
-- source: "/img/movement-9.jpg"
-  category: occasions
-  class: true
 - source: "/img/photography/portrait-3.jpg"
   category: portraits
-  class: false
-- source: "/img/photography/movement-1.jpg"
-  category: movement
   class: false
 - source: "/img/photography/portrait-4.jpg"
   category: portraits
   class: false
 - source: "/img/photography/portrait-5.jpg"
   category: portraits
+  class: false
+- source: "/img/photography/movement-1.jpg"
+  category: movement
   class: false
 - source: "/img/photography/movement-2.jpg"
   category: movement
@@ -48,6 +45,9 @@ photos:
 - source: "/img/photography/movement-5.jpg"
   category: movement
   class: false
+- source: "/img/movement-9.jpg"
+  category: occasions
+  class: true
 - source: "/img/photography/occasions-1.jpg"
   class: true
   category: occasions
