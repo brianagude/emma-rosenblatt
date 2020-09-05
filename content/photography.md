@@ -81,9 +81,6 @@ photos:
 - source: "/img/lifestyle-jackyb-7.jpg"
   class: false
   category: lifestyle
-- source: "/img/lifestyle-jackyb-8.jpg"
-  class: false
-  category: lifestyle
 - source: "/img/lifestyle-jackyb-9.jpg"
   class: false
   category: lifestyle
