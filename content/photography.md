@@ -15,6 +15,15 @@ photos:
 - source: "/img/lifestyle-food-4.jpg"
   class: false
   category: lifestyle
+- source: "/img/lifestyle-food-5.jpg"
+  class: true
+  category: lifestyle
+- source: "/img/lifestyle-food-6.jpg"
+  class: true
+  category: lifestyle
+- source: "/img/lifestyle-food-7.jpg"
+  class: true
+  category: lifestyle
 - source: "/img/lifestyle-food-8.jpg"
   class: false
   category: lifestyle
@@ -26,6 +35,15 @@ photos:
   category: lifestyle
 - source: "/img/lifestyle-hot8-3.jpg"
   class: true
+  category: lifestyle
+- source: "/img/lifestyle-hot8-4.jpg"
+  class: true
+  category: lifestyle
+- source: "/img/lifestyle-hot8-5.jpg"
+  class: true
+  category: lifestyle
+- source: "/img/lifestyle-hot8-6.jpg"
+  class: false
   category: lifestyle
 - source: "/img/lifestyle-hot8-7.jpg"
   class: true
@@ -39,6 +57,15 @@ photos:
 - source: "/img/lifestyle-hot8-10.jpg"
   class: true
   category: lifestyle
+- source: "/img/lifestyle-hot8-11.jpg"
+  class: false
+  category: lifestyle
+- source: "/img/lifestyle-jackyb-1.jpg"
+  class: true
+  category: lifestyle
+- source: "/img/lifestyle-jackyb-2.jpg"
+  class: false
+  category: lifestyle
 - source: "/img/lifestyle-jackyb-3.jpg"
   class: true
   category: lifestyle
@@ -51,20 +78,38 @@ photos:
 - source: "/img/lifestyle-jackyb-6.jpg"
   class: false
   category: lifestyle
+- source: "/img/lifestyle-jackyb-7.jpg"
+  class: false
+  category: lifestyle
+- source: "/img/lifestyle-jackyb-8.jpg"
+  class: false
+  category: lifestyle
+- source: "/img/lifestyle-jackyb-9.jpg"
+  class: false
+  category: lifestyle
 - source: "/img/lifestyle-jackyb-10.jpg"
   class: false
   category: lifestyle
 - source: "/img/movement-1.jpg"
   class: false
   category: movement
-- source: "/img/movement-1.jpg"
+- source: "/img/movement-2.jpg"
   class: false
   category: movement
-- source: "/img/movement-2.jpg"
+- source: "/img/movement-3.jpg"
+  class: false
+  category: movement
+- source: "/img/movement-4.jpg"
+  class: false
+  category: movement
+- source: "/img/movement-5.jpg"
   class: false
   category: movement
 - source: "/img/movement-6.jpg"
   class: false
+  category: movement
+- source: "/img/movement-7.jpg"
+  class: true
   category: movement
 - source: "/img/movement-8.jpg"
   class: false
@@ -78,13 +123,31 @@ photos:
 - source: "/img/movement-11.jpg"
   class: false
   category: movement
+- source: "/img/occasions-1.jpg"
+  class: true
+  category: occasions
+- source: "/img/occasions-2.jpg"
+  class: false
+  category: occasions
 - source: "/img/occasions-4.jpg"
   class: false
   category: occasions
 - source: "/img/occasions-5.jpg"
   class: false
   category: occasions
+- source: "/img/occasions-6.jpg"
+  class: true
+  category: occasions
 - source: "/img/occasions-7.jpg"
+  class: true
+  category: occasions
+- source: "/img/occasions-8.jpg"
+  class: false
+  category: occasions
+- source: "/img/occasions-9.jpg"
+  class: true
+  category: occasions
+- source: "/img/occasions-10.jpg"
   class: true
   category: occasions
 - source: "/img/occasions-11.jpg"
