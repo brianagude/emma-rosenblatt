@@ -149,10 +149,10 @@ function photographyParams() {
 
 // dropdown menu --------------------------------------------------------------------------------------------
 function dropdownMenu() {
-  $(".dropdown-menu").click(function () {
-    $(this).find(".dropdown-body").slideToggle("fast");
-    $(this).toggleClass('open');
-  });
+  // $(".dropdown-menu").click(function () {
+  //   $(this).find(".dropdown-body").slideToggle("fast");
+  //   $(this).toggleClass('open');
+  // });
 
   $(".dropdown-menu").hover(
     function () {
