@@ -3,8 +3,8 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: ''
-  category: []
+- source: "/img/img_2572-edit_f.jpg"
+  category: portraits
   class: false
 - source: "/img/img_1428-editf.jpg"
   category: portraits
