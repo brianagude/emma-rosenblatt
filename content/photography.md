@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/aine0220-31f.jpg"
+  category: portraits
+  class: false
 - source: "/img/lifestyle-food-1.jpg"
   class: false
   category: lifestyle
