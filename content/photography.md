@@ -9,11 +9,11 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
+- source: "/img/img_6745-editf.jpg"
+  category: portraits
   class: false
-- source: ''
-  category: []
+- source: "/img/img_6552-edit_f.jpg"
+  category: portraits
   class: false
 - source: "/img/img_6525-editf.jpg"
   category: portraits
