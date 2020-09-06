@@ -6,8 +6,8 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
+- source: "/img/img_8422f.jpg"
+  category: portraits
   class: false
 - source: "/img/img_6745-editf.jpg"
   category: portraits
