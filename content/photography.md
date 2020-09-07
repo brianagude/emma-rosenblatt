@@ -23,7 +23,7 @@ photos:
   class: false
 - source: "/img/img_5778-editf.jpg"
   category: occasions
-  class: false
+  class: true
 - source: "/img/jackcooper1st-266-edit1.jpg"
   category: occasions
   class: true
