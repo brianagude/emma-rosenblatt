@@ -18,21 +18,21 @@ photos:
 - source: "/img/bonafedeholiday18-4.jpg"
   category: occasions
   class: true
+- source: "/img/img_5778-editf.jpg"
+  category: occasions
+  class: true
+- source: "/img/jackcooper1st-266-edit1.jpg"
+  category: occasions
+  class: true
 - source: "/img/joellengrahamwedding-296.jpg"
   category: occasions
   class: true
 - source: "/img/jackybskincare012619-45f-1.jpg"
   category: portraits
   class: false
-- source: "/img/img_5778-editf.jpg"
-  category: occasions
-  class: true
 - source: "/img/img_8422f-1.jpg"
   category: portraits
   class: false
-- source: "/img/jackcooper1st-266-edit1.jpg"
-  category: occasions
-  class: true
 - source: "/img/img_6552-edit_f-1.jpg"
   category: portraits
   class: false
