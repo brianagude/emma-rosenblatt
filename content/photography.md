@@ -12,9 +12,9 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
-  class: false
+- source: "/img/bonafedeholiday18-4.jpg"
+  category: occasions
+  class: true
 - source: "/img/img_6051f.jpg"
   category: occasions
   class: false
