@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/img_1428-editf-1.jpg"
+  category: portraits
+  class: false
 - source: "/img/aine0220-31f-1.jpg"
   category: portraits
   class: false
