@@ -3,28 +3,7 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/jackybskincare012619-45f.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_8422f.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_6745-editf.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_6552-edit_f.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_6525-editf.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_2572-edit_f.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_1428-editf.jpg"
-  category: portraits
-  class: false
-- source: "/img/aine0220-31f.jpg"
+- source: "/img/aine0220-31f-1.jpg"
   category: portraits
   class: false
 - source: "/img/lifestyle-food-1.jpg"
