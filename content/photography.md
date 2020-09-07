@@ -9,8 +9,8 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
+- source: "/img/img_6525-editf-1.jpg"
+  category: portraits
   class: false
 - source: "/img/img_2572-edit_f-1.jpg"
   category: portraits
