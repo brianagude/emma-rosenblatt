@@ -15,8 +15,8 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
+- source: "/img/img_6051f.jpg"
+  category: occasions
   class: false
 - source: "/img/joellengrahamwedding-216.jpg"
   category: occasions
