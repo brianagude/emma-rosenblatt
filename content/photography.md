@@ -18,8 +18,8 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: ''
+- source: "/img/joellengrahamwedding-216.jpg"
+  category: occasions
   class: false
 - source: "/img/img_5778-editf.jpg"
   category: occasions
