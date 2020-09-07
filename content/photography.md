@@ -19,7 +19,7 @@ photos:
   category: []
   class: false
 - source: ''
-  category: []
+  category: ''
   class: false
 - source: "/img/img_5778-editf.jpg"
   category: occasions
