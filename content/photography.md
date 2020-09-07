@@ -3,8 +3,8 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: ''
-  category: []
+- source: "/img/joellengrahamwedding-265.jpg"
+  category: occasions
   class: false
 - source: "/img/joellengrahamwedding-296.jpg"
   category: occasions
