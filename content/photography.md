@@ -9,18 +9,18 @@ photos:
 - source: "/img/img_9247-editf2.jpg"
   category: occasions
   class: false
-- source: "/img/joellengrahamwedding-296.jpg"
-  category: occasions
-  class: false
-- source: "/img/bonafedeholiday18-4.jpg"
-  category: occasions
-  class: true
 - source: "/img/img_6051f.jpg"
   category: occasions
   class: false
 - source: "/img/joellengrahamwedding-216.jpg"
   category: occasions
   class: false
+- source: "/img/bonafedeholiday18-4.jpg"
+  category: occasions
+  class: true
+- source: "/img/joellengrahamwedding-296.jpg"
+  category: occasions
+  class: true
 - source: "/img/jackybskincare012619-45f-1.jpg"
   category: portraits
   class: false
