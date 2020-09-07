@@ -6,8 +6,8 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
+- source: "/img/joellengrahamwedding-296.jpg"
+  category: occasions
   class: false
 - source: "/img/img_9247-editf2.jpg"
   category: occasions
