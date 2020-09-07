@@ -3,6 +3,30 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: ''
+  category: []
+  class: false
+- source: ''
+  category: []
+  class: false
+- source: ''
+  category: []
+  class: false
+- source: ''
+  category: []
+  class: false
+- source: ''
+  category: []
+  class: false
+- source: ''
+  category: []
+  class: false
+- source: ''
+  category: []
+  class: false
+- source: "/img/jackcooper1st-266-edit1.jpg"
+  category: occasions
+  class: true
 - source: "/img/jackybskincare012619-45f-1.jpg"
   category: portraits
   class: false
