@@ -6,10 +6,10 @@ photos:
 - source: "/img/joellengrahamwedding-265.jpg"
   category: occasions
   class: false
-- source: "/img/joellengrahamwedding-296.jpg"
+- source: "/img/img_9247-editf2.jpg"
   category: occasions
   class: false
-- source: "/img/img_9247-editf2.jpg"
+- source: "/img/joellengrahamwedding-296.jpg"
   category: occasions
   class: false
 - source: "/img/bonafedeholiday18-4.jpg"
