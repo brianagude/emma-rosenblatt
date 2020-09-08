@@ -36,7 +36,7 @@ function reviewsCarousel() {
       mobileFirst: true,
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 8000,
+      autoplaySpeed: 10000,
 
       responsive: [
         {

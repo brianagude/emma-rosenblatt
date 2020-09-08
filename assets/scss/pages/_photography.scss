@@ -12,8 +12,10 @@
 
   .dropdown-body {
     background-color: $gray-light;
-    border: $gray;
+    border: $gray 1px solid;
   }
+
+  .dropdown-btn { @extend .current; }
 
   // styling ---------------------------------------------
 
@@ -23,6 +25,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 24px;
     }
 
     img {
@@ -34,12 +37,20 @@
     }
 
     img + img {
-      margin-bottom: 24px;
+      margin-top: 24px;
     }
 
     @include bp(sm) {
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $base-unit * 1.5;
+        align-items: flex-start;
+      }
+
       img + img {
-        margin-bottom: 32px;
+        // margin-top: 32px;
+        margin-top: 0; 
       }
     }
 
@@ -52,7 +63,13 @@
       }
 
       .vert { grid-row: auto /span 2; }
-      img + img { margin-bottom: 0; }
+      img + img { margin-top: 0; }
     }
+  }
+
+  footer:first-of-type {
+    display: none; 
+
+    @include bp(md){ display: block; }
   }
 }
