@@ -165,6 +165,7 @@ header {
   @include bp(md){
     li + li { margin-top: 4px; }
     border-radius: 2px;
+    padding: 8px; 
   }
 }
 
