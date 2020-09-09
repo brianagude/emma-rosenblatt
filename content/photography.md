@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/gavin1st13020-43.jpg"
+  category: occasions
+  class: true
 - source: "/img/emma1stbday-109-copy.jpg"
   category: occasions
   class: false
