@@ -123,6 +123,9 @@ photos:
 - source: "/img/joellengrahamwedding-265.jpg"
   category: occasions
   class: false
+- source: "/img/bonafedeholiday18-4.jpg"
+  category: occasions
+  class: true
 - source: "/img/img_9247-editf2.jpg"
   category: occasions
   class: false
@@ -132,9 +135,6 @@ photos:
 - source: "/img/joellengrahamwedding-216.jpg"
   category: occasions
   class: false
-- source: "/img/bonafedeholiday18-4.jpg"
-  category: occasions
-  class: true
 - source: "/img/img_5778-editf.jpg"
   category: occasions
   class: true
