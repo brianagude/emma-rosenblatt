@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/emma1stbday-109-copy.jpg"
+  category: occasions
+  class: false
 - category: occasions
   source: "/img/img_6007-editf.jpg"
   class: true
