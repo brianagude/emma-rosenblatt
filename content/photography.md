@@ -9,24 +9,24 @@ photos:
 - source: "/img/gavin1st13020-113.jpg"
   category: occasions
   class: true
-- source: "/img/gavin1st13020-43.jpg"
-  category: occasions
-  class: true
 - source: "/img/emma1stbday-109-copy.jpg"
   category: occasions
   class: false
-- category: occasions
-  source: "/img/img_6007-editf.jpg"
-  class: true
-- source: "/img/cooper_birthday-131.jpg"
+- source: "/img/gavin1st13020-43.jpg"
   category: occasions
   class: true
 - source: "/img/lifestyle-food-1.jpg"
   class: false
   category: lifestyle
+- source: "/img/cooper_birthday-131.jpg"
+  category: occasions
+  class: true
 - source: "/img/lifestyle-food-2.jpg"
   class: false
   category: lifestyle
+- category: occasions
+  source: "/img/img_6007-editf.jpg"
+  class: true
 - source: "/img/lifestyle-food-3.jpg"
   class: true
   category: lifestyle
