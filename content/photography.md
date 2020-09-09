@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/cooper_birthday-131.jpg"
+  category: occasions
+  class: true
 - source: "/img/gavin1st13020-68.jpg"
   category: occasions
   class: true
