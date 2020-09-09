@@ -39,7 +39,7 @@ fields:
   - name: class
     type: boolean
     label: Vertical
-    description: Make a photo take 2 vertical rows / spaces
+    description: Is this image portrait oriented?
   config:
     labelField: category
 pages:
