@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- category: occasions
+  source: "/img/img_6007-editf.jpg"
+  class: true
 - source: "/img/lifestyle-food-1.jpg"
   class: false
   category: lifestyle
