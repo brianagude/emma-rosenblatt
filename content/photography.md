@@ -3,54 +3,6 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/joellengrahamwedding-265.jpg"
-  category: occasions
-  class: false
-- source: "/img/img_9247-editf2.jpg"
-  category: occasions
-  class: false
-- source: "/img/img_6051f.jpg"
-  category: occasions
-  class: false
-- source: "/img/joellengrahamwedding-216.jpg"
-  category: occasions
-  class: false
-- source: "/img/bonafedeholiday18-4.jpg"
-  category: occasions
-  class: true
-- source: "/img/img_5778-editf.jpg"
-  category: occasions
-  class: true
-- source: "/img/jackcooper1st-266-edit1.jpg"
-  category: occasions
-  class: true
-- source: "/img/joellengrahamwedding-296.jpg"
-  category: occasions
-  class: true
-- source: "/img/jackybskincare012619-45f-1.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_8422f-1.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_6552-edit_f-1.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_6745-editf-1.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_6525-editf-1.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_2572-edit_f-1.jpg"
-  category: portraits
-  class: false
-- source: "/img/img_1428-editf-1.jpg"
-  category: portraits
-  class: false
-- source: "/img/aine0220-31f-1.jpg"
-  category: portraits
-  class: false
 - source: "/img/lifestyle-food-1.jpg"
   class: false
   category: lifestyle
@@ -168,6 +120,30 @@ photos:
 - source: "/img/movement-11.jpg"
   class: false
   category: movement
+- source: "/img/joellengrahamwedding-265.jpg"
+  category: occasions
+  class: false
+- source: "/img/img_9247-editf2.jpg"
+  category: occasions
+  class: false
+- source: "/img/img_6051f.jpg"
+  category: occasions
+  class: false
+- source: "/img/joellengrahamwedding-216.jpg"
+  category: occasions
+  class: false
+- source: "/img/bonafedeholiday18-4.jpg"
+  category: occasions
+  class: true
+- source: "/img/img_5778-editf.jpg"
+  category: occasions
+  class: true
+- source: "/img/jackcooper1st-266-edit1.jpg"
+  category: occasions
+  class: true
+- source: "/img/joellengrahamwedding-296.jpg"
+  category: occasions
+  class: true
 - source: "/img/occasions-1.jpg"
   class: true
   category: occasions
@@ -198,6 +174,30 @@ photos:
 - source: "/img/occasions-11.jpg"
   class: true
   category: occasions
+- source: "/img/jackybskincare012619-45f-1.jpg"
+  category: portraits
+  class: false
+- source: "/img/img_8422f-1.jpg"
+  category: portraits
+  class: false
+- source: "/img/img_6552-edit_f-1.jpg"
+  category: portraits
+  class: false
+- source: "/img/img_6745-editf-1.jpg"
+  category: portraits
+  class: false
+- source: "/img/img_6525-editf-1.jpg"
+  category: portraits
+  class: false
+- source: "/img/img_2572-edit_f-1.jpg"
+  category: portraits
+  class: false
+- source: "/img/img_1428-editf-1.jpg"
+  category: portraits
+  class: false
+- source: "/img/aine0220-31f-1.jpg"
+  category: portraits
+  class: false
 - source: "/img/portrait-2.jpg"
   class: false
   category: portraits
