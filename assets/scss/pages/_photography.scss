@@ -36,34 +36,26 @@
       &:last-of-type { margin-bottom: 0; }
     }
 
-    img + img {
-      margin-top: 24px;
-    }
+    img { margin-bottom: 24px; }
 
     @include bp(sm) {
       .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        // gr 
         grid-gap: $base-unit * 1.5;
         align-items: flex-start;
       }
 
-      img + img {
-        // margin-top: 32px;
-        margin-top: 0; 
-      }
+      img { margin-bottom: 0; }
     }
 
     @include bp(md){
       .container {
         grid-template-columns: repeat(3, 1fr);
-        // flex-flow: column wrap;
         grid-auto-flow: dense;
       }
 
       .vert { grid-row: auto /span 2; }
-      img + img { margin-top: 0; }
     }
   }
 
