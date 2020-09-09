@@ -122,28 +122,28 @@ photos:
   category: movement
 - source: "/img/joellengrahamwedding-265.jpg"
   category: occasions
-  class: false
+  class: true
 - source: "/img/bonafedeholiday18-4.jpg"
   category: occasions
-  class: true
+  class: false
 - source: "/img/img_9247-editf2.jpg"
   category: occasions
   class: false
 - source: "/img/img_6051f.jpg"
   category: occasions
-  class: false
+  class: true
 - source: "/img/joellengrahamwedding-216.jpg"
   category: occasions
-  class: false
+  class: true
 - source: "/img/img_5778-editf.jpg"
   category: occasions
-  class: true
+  class: false
 - source: "/img/jackcooper1st-266-edit1.jpg"
   category: occasions
-  class: true
+  class: false
 - source: "/img/joellengrahamwedding-296.jpg"
   category: occasions
-  class: true
+  class: false
 - source: "/img/occasions-1.jpg"
   class: true
   category: occasions

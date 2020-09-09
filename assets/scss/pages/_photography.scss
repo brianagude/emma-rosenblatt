@@ -44,6 +44,7 @@
       .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        // gr 
         grid-gap: $base-unit * 1.5;
         align-items: flex-start;
       }
@@ -56,10 +57,9 @@
 
     @include bp(md){
       .container {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: $base-unit * 1.5;
-        align-items: flex-start;
+        // flex-flow: column wrap;
+        grid-auto-flow: dense;
       }
 
       .vert { grid-row: auto /span 2; }
