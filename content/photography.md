@@ -147,9 +147,9 @@ photos:
 - source: "/img/img_9247-editf2.jpg"
   category: occasions
   class: false
-- source: "/img/img_6051f.jpg"
+- source: ''
   category: occasions
-  class: true
+  class: false
 - source: "/img/joellengrahamwedding-216.jpg"
   category: occasions
   class: true
