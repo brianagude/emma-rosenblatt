@@ -30,7 +30,7 @@ brands:
 
 I started ‘A Rose in Bloom’ with the hope of creating space for one to bloom and discover their full potential. To me, photography and yoga flow seamlessly together. Both create an internal & external balance of confidence and innate joy.
 
-Whether it be in asana (yoga pose), discovering newfound space and movement in the body or through a photo capturing ones true essence — my intention is to create comfortable environment to help you meet your needs and achieve that ‘aha’ moment.
+Whether it be in asana (yoga pose), discovering newfound space and movement in the body or through a photo capturing ones true essence — my intention is to create a comfortable environment to help you meet your needs and achieve that ‘aha’ moment.
 
 [Let’s get in touch!](#contact-form)
 
