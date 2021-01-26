@@ -252,9 +252,6 @@ photos:
 - source: "/img/portrait-5.jpg"
   class: false
   category: portraits
-- source: "/img/portrait-6.jpg"
-  class: false
-  category: portraits
 - source: "/img/portrait-12.jpg"
   class: false
   category: portraits
