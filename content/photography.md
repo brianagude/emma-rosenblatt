@@ -8,7 +8,7 @@ photos:
   class: false
 - source: "/img/emma-rosenblatt_dru-erin_0732.jpg"
   category: portraits
-  class: true
+  class: false
 - source: "/img/maraxfacile-34.jpg"
   category: occasions
   class: false
