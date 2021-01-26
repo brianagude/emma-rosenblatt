@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/mina102020-112f.jpg"
+  category: portraits
+  class: false
 - source: "/img/img_7819f.jpg"
   category: occasions
   class: true
