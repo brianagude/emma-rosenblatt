@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/img_7819f.jpg"
+  category: occasions
+  class: true
 - source: "/img/img_2008f.jpg"
   category: occasions
   class: true
