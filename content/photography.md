@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/jb102020-173.jpg"
+  category: portraits
+  class: false
 - source: "/img/jb102020-38.jpg"
   category: portraits
   class: false
