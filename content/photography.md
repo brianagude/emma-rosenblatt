@@ -3,7 +3,27 @@ title: Photography
 id: photography
 type: photography
 photos:
-
+- source: "/img/emma-rosenblatt_dru-erin_0732.jpg"
+  category: portraits
+  class: true
+- source: "/img/maraxfacile-34.jpg"
+  category: occasions
+  class: false
+- source: "/img/gavin1st13020-68.jpg"
+  category: occasions
+  class: true
+- source: "/img/gavin1st13020-113.jpg"
+  category: occasions
+  class: true
+- source: "/img/emma1stbday-109-copy.jpg"
+  category: occasions
+  class: false
+- source: "/img/cooper_birthday-131.jpg"
+  category: occasions
+  class: true
+- source: "/img/gavin1st13020-43.jpg"
+  category: occasions
+  class: true
 - source: "/img/lifestyle-food-1.jpg"
   class: false
   category: lifestyle
@@ -124,24 +144,6 @@ photos:
 - source: "/img/movement-11.jpg"
   class: false
   category: movement
-- source: "/img/maraxfacile-34.jpg"
-  category: occasions
-  class: false
-- source: "/img/gavin1st13020-68.jpg"
-  category: occasions
-  class: true
-- source: "/img/gavin1st13020-113.jpg"
-  category: occasions
-  class: true
-- source: "/img/emma1stbday-109-copy.jpg"
-  category: occasions
-  class: false
-- source: "/img/cooper_birthday-131.jpg"
-  category: occasions
-  class: true
-- source: "/img/gavin1st13020-43.jpg"
-  category: occasions
-  class: true
 - source: "/img/joellengrahamwedding-265.jpg"
   category: occasions
   class: true
@@ -149,6 +151,9 @@ photos:
   category: occasions
   class: false
 - source: "/img/img_9247-editf2.jpg"
+  category: occasions
+  class: false
+- source: ''
   category: occasions
   class: false
 - source: "/img/joellengrahamwedding-216.jpg"
