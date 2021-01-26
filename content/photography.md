@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: ''
+  category: []
+  class: false
 - source: "/img/jb102020-173.jpg"
   category: portraits
   class: false
@@ -14,7 +17,7 @@ photos:
   class: false
 - source: "/img/emma-rosenblatt_dru-erin_1125.jpg"
   category: lifestyle
-  class: false
+  class: true
 - source: "/img/emma-rosenblatt_dru-erin_0584.jpg"
   category: portraits
   class: false
