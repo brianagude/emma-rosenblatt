@@ -210,9 +210,6 @@ photos:
 - source: "/img/img_9247-editf2.jpg"
   category: occasions
   class: false
-- source: ''
-  category: occasions
-  class: false
 - source: "/img/joellengrahamwedding-216.jpg"
   category: occasions
   class: true
