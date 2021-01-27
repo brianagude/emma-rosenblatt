@@ -3,7 +3,10 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/tjengaged-260.jpg"
+- source: "/img/tjengaged-317print.jpg"
+  category: occasions
+  class: true
+- source: "/img/tjengaged-260print.jpg"
   category: occasions
   class: true
 - source: "/img/mina102020-99f.jpg"
