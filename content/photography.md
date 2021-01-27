@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/tjengaged-224print.jpg"
+  category: occasions
+  class: false
 - source: "/img/tjengaged-317print.jpg"
   category: occasions
   class: true
