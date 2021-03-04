@@ -9,7 +9,7 @@ photos:
 featured_on: Featured In
 brands:
 - brand: Forbes
-  source: "/img/kisspng-forbes-logo-marketing-business-company-magazine-5aceb32641b2d7-9782635015234957182691.jpg"
+  source: "/img/png-clipart-logo-forbes-brand-company-forbes-magazine-logo-company-text.png"
 - brand: Lit
   source: "/img/contact/brand-1.png"
 - brand: Radar Online
