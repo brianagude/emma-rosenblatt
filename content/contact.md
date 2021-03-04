@@ -8,8 +8,8 @@ photos:
 - "/img/contact/emma-3.jpg"
 featured_on: Featured In
 brands:
-- brand: Five Sense Collective
-  source: "/img/five-sense-collective-logo.png"
+- brand: Forbes
+  source: "/img/kisspng-forbes-logo-marketing-business-company-magazine-5aceb32641b2d7-9782635015234957182691.jpg"
 - brand: Lit
   source: "/img/contact/brand-1.png"
 - brand: Radar Online
