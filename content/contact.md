@@ -8,6 +8,8 @@ photos:
 - "/img/contact/emma-3.jpg"
 featured_on: Featured In
 brands:
+- brand: Forbes
+  source: "/img/png-clipart-logo-forbes-brand-company-forbes-magazine-logo-company-text-1.png"
 - brand: Lit
   source: "/img/contact/brand-1.png"
 - brand: Radar Online
