@@ -9,7 +9,7 @@ photos:
 featured_on: Featured In
 brands:
 - brand: Forbes
-  source: "/img/unnamed.jpg"
+  source: "/img/5847e9aacef1014c0b5e4828.png"
 - brand: Lit
   source: "/img/contact/brand-1.png"
 - brand: Radar Online
