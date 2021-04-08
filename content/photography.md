@@ -3,9 +3,6 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/emma-rosenblatt_dru-erin_0754.jpg"
-  category: lifestyle
-  class: false
 - source: "/img/emma-rosenblatt_dru-erin_0834.jpg"
   category: movement
   class: true
@@ -17,9 +14,6 @@ photos:
   class: false
 - source: "/img/emma-rosenblatt_dru-erin_0040.jpg"
   category: portraits
-  class: false
-- source: "/img/emma-rosenblatt_dru-erin_0845.jpg"
-  category: lifestyle
   class: false
 - source: "/img/img_0209f.jpg"
   category: portraits
@@ -63,6 +57,12 @@ photos:
 - source: "/img/jb102020-166.jpg"
   category: portraits
   class: false
+- source: "/img/emma-rosenblatt_dru-erin_0845.jpg"
+  category: lifestyle
+  class: true
+- source: "/img/emma-rosenblatt_dru-erin_0754.jpg"
+  category: lifestyle
+  class: true
 - source: "/img/emma-rosenblatt_dru-erin_1125.jpg"
   category: lifestyle
   class: true
