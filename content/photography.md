@@ -60,6 +60,9 @@ photos:
 - source: "/img/emma-rosenblatt_dru-erin_0845.jpg"
   category: lifestyle
   class: true
+- source: "/img/emma-rosenblatt_dru-erin_1073.jpg"
+  category: lifestyle
+  class: true
 - source: "/img/emma-rosenblatt_dru-erin_0754.jpg"
   category: lifestyle
   class: true
@@ -72,9 +75,6 @@ photos:
 - source: "/img/emma-rosenblatt_dru-erin_0660.jpg"
   category: portraits
   class: false
-- source: "/img/emma-rosenblatt_dru-erin_1073.jpg"
-  category: lifestyle
-  class: true
 - source: "/img/emma-rosenblatt_dru-erin_0985.jpg"
   category: lifestyle
   class: false
