@@ -3,6 +3,12 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/emma-rosenblatt_dru-erin_0003.jpg"
+  category: portraits
+  class: false
+- source: "/img/emma-rosenblatt_dru-erin_0031.jpg"
+  category: portraits
+  class: false
 - source: "/img/emma-rosenblatt_dru-erin_0040.jpg"
   category: portraits
   class: false
