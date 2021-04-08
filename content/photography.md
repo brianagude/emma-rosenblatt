@@ -3,9 +3,6 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/swrimg_9894.jpg"
-  category: lifestyle
-  class: false
 - source: "/img/swrimg_0047.jpg"
   category: lifestyle
   class: false
