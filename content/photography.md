@@ -3,8 +3,8 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: ''
-  category: []
+- source: "/img/img_0820-editf.jpg"
+  category: lifestyle
   class: false
 - source: "/img/img_0500f.jpg"
   category: lifestyle
