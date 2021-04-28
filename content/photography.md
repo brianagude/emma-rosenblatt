@@ -3,6 +3,15 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: ''
+  category: []
+  class: false
+- source: ''
+  category: []
+  class: false
+- source: "/img/img_0717f.jpg"
+  category: ''
+  class: true
 - source: "/img/swrimg_0047.jpg"
   category: lifestyle
   class: false
