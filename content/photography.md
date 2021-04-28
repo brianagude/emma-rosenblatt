@@ -10,7 +10,7 @@ photos:
   category: []
   class: false
 - source: "/img/img_0717f.jpg"
-  category: ''
+  category: lifestyle
   class: true
 - source: "/img/swrimg_0047.jpg"
   category: lifestyle
