@@ -6,8 +6,8 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
+- source: "/img/img_0500f.jpg"
+  category: lifestyle
   class: false
 - source: "/img/img_0717f.jpg"
   category: lifestyle
