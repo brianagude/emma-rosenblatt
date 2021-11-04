@@ -6,10 +6,10 @@ photos:
 - source: "/img/blackwedding-217f.jpg"
   category: occasions
   class: true
-- source: "/img/blackwedding-242.jpg"
+- source: "/img/blackwedding-562.jpg"
   category: occasions
   class: true
-- source: "/img/blackwedding-562.jpg"
+- source: "/img/blackwedding-242.jpg"
   category: occasions
   class: true
 - source: "/img/blackwedding-782.jpg"
