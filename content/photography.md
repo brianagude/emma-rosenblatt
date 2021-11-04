@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/blackwedding-562.jpg"
+  category: occasions
+  class: true
 - source: "/img/blackwedding-242.jpg"
   category: occasions
   class: true
