@@ -3,6 +3,12 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: ''
+  category: []
+  class: false
+- source: "/img/henrys0917-9.jpg"
+  category: lifestyle
+  class: false
 - source: "/img/img_1925-editf.jpg"
   category: movement
   class: true
