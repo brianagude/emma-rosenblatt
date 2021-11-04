@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/img_1925-editf.jpg"
+  category: ''
+  class: true
 - source: "/img/img_1548-editf.jpg"
   category: movement
   class: false
