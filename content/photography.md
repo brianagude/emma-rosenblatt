@@ -3,12 +3,12 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/blackwedding-105.jpg"
-  category: occasions
-  class: true
 - source: "/img/blackwedding-782.jpg"
   category: occasions
   class: false
+- source: "/img/blackwedding-105.jpg"
+  category: occasions
+  class: true
 - category: occasions
   source: "/img/blackwedding-2.jpg"
   class: false
