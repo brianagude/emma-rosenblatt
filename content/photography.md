@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/img_9989-editf.jpg"
+  category: lifestyle
+  class: true
 - source: "/img/henrys0917-18.jpg"
   category: lifestyle
   class: false
