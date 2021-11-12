@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/img_9966-editf.jpg"
+  category: portraits
+  class: false
 - source: "/img/img_0125-editf.jpg"
   category: portraits
   class: false
