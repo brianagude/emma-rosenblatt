@@ -6,9 +6,9 @@ photos:
 - source: ''
   category: []
   class: false
-- source: ''
-  category: []
-  class: false
+- source: "/img/img_7273.jpg"
+  category: movement
+  class: true
 - source: "/img/img_7237.jpg"
   category: lifestyle
   class: true
