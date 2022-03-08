@@ -3,10 +3,10 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: "/img/img_7174f.jpg"
+- source: "/img/img_7273.jpg"
   category: movement
   class: true
-- source: "/img/img_7273.jpg"
+- source: "/img/img_7174f.jpg"
   category: movement
   class: true
 - source: "/img/img_7237.jpg"
