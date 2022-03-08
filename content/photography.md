@@ -156,9 +156,6 @@ photos:
 - source: "/img/emma-rosenblatt_dru-erin_0732.jpg"
   category: portraits
   class: false
-- source: "/img/maraxfacile-34.jpg"
-  category: occasions
-  class: false
 - source: "/img/gavin1st13020-68.jpg"
   category: occasions
   class: true
