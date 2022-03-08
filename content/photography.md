@@ -3,9 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
-- source: ''
-  category: []
-  class: false
+- source: "/img/moghavemjengagement-269.jpg"
+  category: occasions
+  class: true
 - source: "/img/moghavemjengagement-76.jpg"
   category: occasions
   class: true
