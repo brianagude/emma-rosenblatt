@@ -261,9 +261,6 @@ photos:
 - source: "/img/movement-2.jpg"
   class: false
   category: movement
-- source: "/img/movement-3.jpg"
-  class: false
-  category: movement
 - source: "/img/movement-4.jpg"
   class: false
   category: movement
