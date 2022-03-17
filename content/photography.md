@@ -351,10 +351,10 @@ photos:
 - source: "/img/img_2572-edit_f-1.jpg"
   category: portraits
   class: false
-- source: "/img/img_1428-editf-1.jpg"
+- source: "/img/aine0220-31f-1.jpg"
   category: portraits
   class: false
-- source: "/img/aine0220-31f-1.jpg"
+- source: "/img/img_1428-editf-1.jpg"
   category: portraits
   class: false
 - source: "/img/portrait-2.jpg"
