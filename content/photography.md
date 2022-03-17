@@ -234,7 +234,7 @@ photos:
 - source: "/img/lifestyle-hot8-11.jpg"
   class: false
   category: lifestyle
-- source: "/img/lifestyle-jackyb-1.jpg"
+- source: "/img/jb102020-156f.jpg"
   class: true
   category: lifestyle
 - source: "/img/lifestyle-jackyb-3.jpg"
