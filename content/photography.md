@@ -219,9 +219,6 @@ photos:
 - source: "/img/lifestyle-hot8-6.jpg"
   class: false
   category: lifestyle
-- source: "/img/lifestyle-hot8-7.jpg"
-  class: true
-  category: lifestyle
 - source: "/img/lifestyle-hot8-8.jpg"
   class: false
   category: lifestyle
@@ -229,6 +226,9 @@ photos:
   class: true
   category: lifestyle
 - source: "/img/lifestyle-hot8-10.jpg"
+  class: true
+  category: lifestyle
+- source: "/img/lifestyle-hot8-7.jpg"
   class: true
   category: lifestyle
 - source: "/img/lifestyle-hot8-11.jpg"
