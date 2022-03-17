@@ -240,10 +240,10 @@ photos:
 - source: "/img/lifestyle-jackyb-3.jpg"
   class: true
   category: lifestyle
-- source: "/img/lifestyle-jackyb-2.jpg"
+- source: "/img/lifestyle-jackyb-6.jpg"
   class: false
   category: lifestyle
-- source: "/img/lifestyle-jackyb-6.jpg"
+- source: "/img/lifestyle-jackyb-2.jpg"
   class: false
   category: lifestyle
 - source: "/img/lifestyle-jackyb-4.jpg"
