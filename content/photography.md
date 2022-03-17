@@ -93,10 +93,10 @@ photos:
 - source: "/img/emma-rosenblatt_dru-erin_0040.jpg"
   category: portraits
   class: false
-- source: "/img/img_0209f.jpg"
+- source: "/img/img_0233f.jpg"
   category: portraits
   class: false
-- source: "/img/img_0233f.jpg"
+- source: "/img/img_0209f.jpg"
   category: portraits
   class: false
 - source: "/img/img_0274f.jpg"
