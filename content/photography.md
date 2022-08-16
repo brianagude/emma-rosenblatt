@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/emma-rosenblatt_dru-erin_0257.jpg"
+  category: lifestyle
+  class: true
 - source: "/img/img_2966.jpg"
   category: lifestyle
   class: true
