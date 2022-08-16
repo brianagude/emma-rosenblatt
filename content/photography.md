@@ -3,6 +3,12 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/img_2941.jpg"
+  category: lifestyle
+  class: false
+- source: ''
+  category: []
+  class: false
 - source: "/img/img_6649f.jpg"
   category: lifestyle
   class: false
