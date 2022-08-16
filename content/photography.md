@@ -18,10 +18,10 @@ photos:
 - source: "/img/img_6649f.jpg"
   category: lifestyle
   class: false
-- source: "/img/moghavemjengagement-269.jpg"
+- source: "/img/moghavemjengagement-76.jpg"
   category: occasions
   class: true
-- source: "/img/moghavemjengagement-76.jpg"
+- source: "/img/moghavemjengagement-269.jpg"
   category: occasions
   class: true
 - source: "/img/img_7273.jpg"
