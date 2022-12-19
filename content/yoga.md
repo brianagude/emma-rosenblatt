@@ -9,7 +9,7 @@ photos:
 - "/img/yoga/emma-yoga-3.jpg"
 - "/img/yoga/emma-yoga-4.jpg"
 - "/img/yoga/emma-yoga-5.jpg"
-instagram-link: https://www.instagram.com/emma_rosenblatt/
+instagram-link: 'https://www.instagram.com/emma_rosenblatt/ '
 
 ---
 #### Yoga is a healing modality.
