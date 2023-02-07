@@ -6,9 +6,6 @@ photos:
 - source: "/img/2k9a2266-1.jpg"
   category: occasions
   class: true
-- source: "/img/img_2756.jpg"
-  category: occasions
-  class: true
 - source: "/img/emma-rosenblatt_dru-erin_0257.jpg"
   category: lifestyle
   class: true
