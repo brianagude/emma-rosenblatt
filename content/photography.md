@@ -3,6 +3,9 @@ title: Photography
 id: photography
 type: photography
 photos:
+- source: "/img/2k9a2266-1.jpg"
+  category: occasions
+  class: true
 - source: "/img/img_2756.jpg"
   category: occasions
   class: true
